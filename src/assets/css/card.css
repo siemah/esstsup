@@ -1,0 +1,46 @@
+.card-ui {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.card-ui__image-container {
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  position: relative;
+}
+.card-ui__image {
+  width: 100%;
+}
+.card-ui__tag{
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding: .25rem .75rem;
+  border-radius: 1.5rem;
+  background-color: var(--pink);
+  color: var(--white);
+  font-weight: bold;
+}
+.card-ui__content {
+  padding: .75rem;
+  font-family: var(--fontFamilyJanna), sans-serif;
+  font-size: .75rem;
+}
+.card-ui__title {
+  font-size: 1rem;
+}
+.card-ui__description {
+  color: var(--grey);
+}
+.card-ui__action::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.card-ui__link {
+  background-color: var(--blue);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  color: var(--white);
+  font-weight: bold;
+}

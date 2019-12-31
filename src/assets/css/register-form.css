@@ -1,0 +1,20 @@
+.register-form__block {
+  position: relative;
+  padding: 1.5rem;
+}
+.register-form__block textarea {
+  padding: .75rem;
+  resize: vertical;
+  transition: box-shadow .3s;
+  outline: none;
+  border: 1px solid #e6e6e6;;
+}
+.register-form__block textarea:focus{
+  box-shadow: 0 0 1px 3px #0abb6b;
+}
+
+.register-form__block button {
+  background-color: var(--green);
+  padding: 0.75rem 2rem;
+  text-transform: capitalize;
+}

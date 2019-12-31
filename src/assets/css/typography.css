@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Janna LT";
+    src: 
+        url("../fonts/JannaLT-Regular.ttf");
+}
+@font-face {
+  font-family: "Trade-Gothic-LT";
+  src: 
+        url("../fonts/Trade_Gothic_LT_Condensed_No.ttf"), 
+        url("../fonts/TradeGothicLT-BoldCondTwenty.ttf");
+}

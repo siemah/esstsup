@@ -1,0 +1,30 @@
+- Contact 
+  - Put the right content @done
+  - add custom style for list @done
+  - before each contact item add an icon(use icon in footer) @done
+  - remove border-radius of form and input fields, button,.. @done
+  - change the placeholder of each input to fit the right content @done
+  - respect the chart graphic(blue, white and grey in logo) @done
+  - remove margin bottom of form @done
+- Header
+  - change the background-/color @done
+  - put the content @done
+  - flexboxify the header @done
+  - position the mobile menu absolute and hide it on desktop @done
+  - -redesign the menu for mobile version @done
+  - add logo to mobile version(see with mounir)
+  - add grey color to toggle button icon @done
+  - Animate the menu of mobile version when close(maybe change the whole damn animation2) @done
+- Slide
+  - Change Hero background color @done
+  - Choose the right images from unsplash(see google doc) @done
+  - Make the slider take the whole damn width @done
+  - Responsive @done
+  - customize arrow slider controler (see with mou)
+  - make all content of slide animate each time user slide to next/prev slide @done
+- Footer
+  - Add the white logo @done
+  - ajust the height of logo at footer @done
+  - Put the content @done
+  - Search for social network icons
+  - Add social network links in the last section
