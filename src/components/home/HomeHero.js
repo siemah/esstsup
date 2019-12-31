@@ -29,6 +29,7 @@ export default function HomeHero({ data, className = '', }) {
     autoplaySpeed: 5000,
     dots: true,
     fade: true,
+    arrows: false,
     // autoplaySpeed:5000,
     beforeChange: () => {
       if (typeof window !== `undefined`) {

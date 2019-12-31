@@ -371,22 +371,20 @@ a:hover {
   list-style: none;
 }
 .contacts-list .card__icon-container {
-  margin-right: 1rem;
   width: 3.5rem;
   min-width: 3.5rem;
   height: 3.5rem;
   min-height: 3.5rem;
-  box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.019), 0px 1px 10px 2px rgba(0,0,0,0.029), 0px 1px 10px 2px rgba(0,0,0,0.029), 0px 1px 10px 2px rgba(0,0,0,0.019);
 }
 .form-list__link {
   color: var(--blue);
-  text-decoration: underline;
   transition: all .3s;
+  text-decoration-color: transparent;
 }
 .form-list__link:focus,
 .form-list__link:hover {
   color: inherit;
-  text-decoration-color: transparent;
+  text-decoration: underline;
 }
 .form-list__icon{
   transform: scale(1.5);
@@ -436,7 +434,7 @@ a:hover {
 .color-white {
   color: var(--white);
 }
-button svg {
+svg {
   max-height: 20px;
 }
 
@@ -488,10 +486,22 @@ input:focus {
   height: 0.25rem;
   width: 1rem;
   content: '';
+  transition: .5s;
 }
 .home-hero .slick-dots li.slick-active button:before{
   background-color: var(--white);
+  width: 1.75rem;
 }
+.home-hero .slick-dots {
+  right: 2rem;
+  width: 2rem;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 576px){
   .hero .container {
     /* margin-left: calc(50% - 280px);
