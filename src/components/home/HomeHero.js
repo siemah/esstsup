@@ -25,7 +25,8 @@ export default function HomeHero({ data, className = '', }) {
     centerPadding: "0",
     slidesToShow: 1,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
     dots: true,
     fade: true,
     // autoplaySpeed:5000,
@@ -61,7 +62,7 @@ export default function HomeHero({ data, className = '', }) {
           <div className={`hero-image`} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80)` }} />
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
-              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Formations</h3>
+              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
               <h2 className={`block__title block  text-left js-animate-sliding js-delay-1 center mb1`} data-slide='left'>Licence En Télécommunication </h2>
               <div className={`hero__action block js-animate-sliding js-delay-2`} data-slide='up'>
                 <AniLink
@@ -78,7 +79,7 @@ export default function HomeHero({ data, className = '', }) {
         <div>
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
-              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Formations</h3>
+              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
               <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>Licence En Informatique</h2>
               <div className={`hero__action block`}>
                 <AniLink
@@ -96,7 +97,7 @@ export default function HomeHero({ data, className = '', }) {
         <div>
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
-              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Formations</h3>
+              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
               <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>Licence En Électronique</h2>
               <div className={`hero__action block js-animate-sliding js-delay-2`} data-slide='up'>
                 <AniLink
@@ -114,7 +115,7 @@ export default function HomeHero({ data, className = '', }) {
         <div>
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
-              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Formations</h3>
+              <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
               <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>Licence En Chimie</h2>
               <div className={`hero__action block js-animate-sliding js-delay-2`} data-slide='up'>
                 <AniLink

@@ -1,6 +1,6 @@
 /* hero is like a jumbotron in bootstrap */
 .hero {
-  padding: 2rem 1rem;
+  padding: 0;
   margin-bottom: 2rem;
   background-color: var(--blue);
 }

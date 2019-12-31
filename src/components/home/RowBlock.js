@@ -5,13 +5,13 @@ import { Container, Row, Col } from '../layout/grid'
 
 import AboutUsImage from '../../assets/images/about-us.png';
 
-export default function RowBlock({ children, imageSource, subtitle, title, content, contentComponent: C, link, isRight=false}) {
+export default function RowBlock({ children, imageSource, firstHalfClassName='', subtitle, title, content, contentComponent: C, link, isRight=false}) {
   const MainContent = () => content ? <p>{content}</p> : <C />
   return (
     <div className={`wrapper__block bg-lightblue fake-bg${isRight ? '-right' : ''}`}>
         <Container>
           <Row className={`mb0 flex-block block__row`}>
-            <Col s={12} m={6} className={`js-animate-image`}>
+            <Col s={12} m={6} className={`js-animate-image ${firstHalfClassName}`}>
               {
                 imageSource 
                 ? <img src={imageSource} className={`block__image mb0 radius-0`} alt={`reading about us`} />
@@ -32,7 +32,7 @@ export default function RowBlock({ children, imageSource, subtitle, title, conte
               {
                 link && (
                   <div className={`block__action block js-animate  m0`}>
-                    <Link className={`block__link js-animate  form-field__button`} to={`${link}`}>Explore</Link>
+                    <Link className={`block__link js-animate  form-field__button`} to={`${link}`}>En Savoir Plus</Link>
                   </div>
                 )
               }

@@ -85,13 +85,13 @@ const IndexPage = ({ data }) => {
       <ul className={`contacts-list m0`}>
         <li className={`js-animate slide-up flex-block`}>
           <div className={`card__icon-container flex-block flex-center center rounded bg-white mb0 `}>
-            <FontAwesomeIcon icon={faMobile} className={`form-list__icon color-blue`}/>
+            <FontAwesomeIcon icon={faMobile} className={`form-list__icon color-blue`} />
           </div>
           <a className={`form-list__link flex-block flex-center`} href={`tel://+213 (0) 7 99 93 16 99`}>+213 (0) 7 99 93 16 99</a>
         </li>
         <li className={`js-animate slide-up flex-block`}>
           <div className={`card__icon-container flex-block flex-center center rounded bg-white mb0 `}>
-            <FontAwesomeIcon icon={faMobile} className={`form-list__icon color-green`}/>
+            <FontAwesomeIcon icon={faMobile} className={`form-list__icon color-green`} />
           </div>
           <a className={`form-list__link flex-block flex-center`} href={`tel://+213 (0) 7 99 93 16 99`}>+213 (0) 7 99 93 16 99</a>
         </li>
@@ -118,33 +118,53 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <HomeHero className={`home-hero wrapper__block pt0 pb0`} data={wpPages.edges || []} />
       <div className={``}>
-        <RowBlock imageSource={AboutImg} link={`/`} subtitle={'About us'} title={'We are The Best school'} content={`lorem ipsuol dolor sit amet amek a winathan dolor sit amet amek a winathan dolor sit amet amek a winathan.`} />
-        <BlockIcon forSmallSize={1} containerClassName={`wrapper__block container-xs`} data={iconData1} />
+        <RowBlock
+          imageSource={Logo}
+          link={`/`}
+          firstHalfClassName={`flex-block flex-center`}
+          subtitle={''}
+          title={'À Propos De L’ESST'}
+          content={`
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
+        />
+        {/* <BlockIcon forSmallSize={1} containerClassName={`wrapper__block container-xs`} data={iconData1} /> */}
         <div className={`wrapper__block`}>
           <Container>
             <Row>
               <Col s={12}>
-                <h3 className={`block__sub-title js-animate center mb1`}>Courses</h3>
+                <h3 className={`block__sub-title js-animate center mb1`}></h3>
               </Col>
               <Col s={12}>
-                <h2 className={`block__title js-animate center mb1`}>Popular Subjects</h2>
+                <h2 className={`block__title js-animate center mb1`}>Nos Partenaires</h2>
               </Col>
             </Row>
             <Row>
-              {
-                wpPages.edges.map(({ node: { id: key, title, path, featured_media, } }) => (
-                  <Col s={12} m={4} key={`card-${key}`}>
-                    <Card
-                      className={`bg-lightpurple js-animate`}
-                      imageSource={`${featured_media.source_url}`}
-                      title={`${title}`}
-                      excerpt={`${title}`}
-                      tag={`science`}
-                      link={path}
-                    />
-                  </Col>
-                ))
-              }
+              <div className={`flex-block`}>
+                <div className={`flex-item`}>
+                  <img src={Logo} />
+                </div>
+                <div className={`flex-item`}>
+                  <img src={Logo} />
+                </div>
+                <div className={`flex-item`}>
+                  <img src={Logo} />
+                </div>
+              </div>
+              <div className={`flex-block`}>
+                <div className={`flex-item`}>
+                  <img src={Logo} />
+                </div>
+                <div className={`flex-item`}>
+                  <img src={Logo} />
+                </div>
+                <div className={`flex-item`}>
+                  <img src={Logo} />
+                </div>
+              </div>
             </Row>
 
           </Container>
