@@ -1,4 +1,8 @@
 import React from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus, } from '@fortawesome/free-solid-svg-icons'
+
 import Hero from '../Hero';
 import { Container, Col, Row, } from '../layout/grid';
 import AboutUs from '../../assets/images/about-us.png';
@@ -25,7 +29,7 @@ export default function HomeHero({ data, className = '', }) {
     centerPadding: "0",
     slidesToShow: 1,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     dots: true,
     fade: true,
@@ -70,8 +74,8 @@ export default function HomeHero({ data, className = '', }) {
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
-                  className={`card-ui__link radius-0 left`}>
-                  En Savoir Plus
+                  className={`card-ui__link radius-1 left`}>
+                  En Savoir <FontAwesomeIcon icon={faPlus} />
               </AniLink>
               </div>
             </div>
@@ -87,8 +91,8 @@ export default function HomeHero({ data, className = '', }) {
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
-                  className={`card-ui__link radius-0 left js-animate-sliding js-delay-2`} data-slide='up'>
-                  En Savoir Plus
+                  className={`card-ui__link radius-1 left js-animate-sliding js-delay-2`} data-slide='up'>
+                  En Savoir <FontAwesomeIcon icon={faPlus} />
               </AniLink>
               </div>
             </div>
@@ -105,8 +109,8 @@ export default function HomeHero({ data, className = '', }) {
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
-                  className={`card-ui__link radius-0 left`}>
-                  En Savoir Plus
+                  className={`card-ui__link radius-1 left`}>
+                  En Savoir <FontAwesomeIcon icon={faPlus} />
               </AniLink>
               </div>
             </div>
@@ -123,8 +127,8 @@ export default function HomeHero({ data, className = '', }) {
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
-                  className={`card-ui__link radius-0 left`}>
-                  En Savoir Plus
+                  className={`card-ui__link radius-1 left`}>
+                  En Savoir <FontAwesomeIcon icon={faPlus} />
                 </AniLink>
               </div>
             </div>
@@ -143,7 +147,7 @@ export default function HomeHero({ data, className = '', }) {
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
-                  className={`card-ui__link radius-0 left`}>
+                  className={`card-ui__link radius-1 left`}>
                   Licence Informatique
               </AniLink>
               </div>

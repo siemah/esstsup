@@ -1,4 +1,7 @@
 - Header
+  - remove padding of .main--menu__block then add it to li item @done
+  - add bar at top of link when user hover above it rather than change the background @done
+  - change the arrow down shape at header menu @done
   - change the background-/color @done
   - put the content @done
   - flexboxify the header @done
@@ -28,6 +31,13 @@
   - add filter to partenaires images @done
   - switch 2 white background on hover  @done
 - Slide
+  - Color of Title and subtitle at each slide must be blue
+  - Subtitle not bold like title
+  - arround button link
+  - Replace plus word via + icon
+  - Add a block of white background with opacity of .5
+  - decrease font size of title and subtitle
+  - Adapt white block under title & subtitle depend on them(border-radius, dimensions ..)
   - Change Hero background color @done
   - Choose the right images from unsplash(see google doc) @done
   - Make the slider take the whole damn width @done
@@ -35,7 +45,7 @@
   - move dots to right side of slider @done
   - animate them(not sure) @done
   - remove default arrows @done
-  - customize arrow slider controler
+  - dont add arrow slider controler @done
   - remove padding of hero @done
   - make all content of slide animate each time user slide to next/prev slide @done
 - Footer

@@ -113,11 +113,12 @@
 .column-menu {
   position: absolute;
   left: 0;
-  top: 2.5rem;
+  top: 3.5rem;
   visibility: hidden;
 }
 .column-menu li {
   text-align: left;
+  min-width: 100px;
 }
 .column-menu::before,
 .column-menu::after {

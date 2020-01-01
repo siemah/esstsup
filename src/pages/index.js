@@ -116,7 +116,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <HomeHero className={`home-hero wrapper__block pt0 pb0`} data={wpPages.edges || []} />
+      <HomeHero className={`home-hero wrapper__block pt0 pb0 mb0`} data={wpPages.edges || []} />
       <div className={``}>
         <RowBlock
           imageSource={Logo}
