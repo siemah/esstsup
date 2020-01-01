@@ -29,12 +29,12 @@ export default function HomeHero({ data, className = '', }) {
     centerPadding: "0",
     slidesToShow: 1,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     dots: true,
     fade: true,
     arrows: false,
-    // autoplaySpeed:5000,
+    waitForAnimate: false,
     beforeChange: () => {
       if (typeof window !== `undefined`) {
         let slickSlider = document.querySelector('.js-slider__block');
@@ -61,7 +61,7 @@ export default function HomeHero({ data, className = '', }) {
   return (
     <Hero fullHeight={true} className={`${className}`}>
 
-      <Slider {...settings}>
+      <Slider {...settings} >
 
         <div>
           <div className={`hero-image`} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80)` }} />
