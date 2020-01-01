@@ -52,10 +52,10 @@
   - Put title and logo image in same row @done
   - Color of title to blue and increase it fontsize @done
   - add left border to title and image row @done
-  - text section inside a box with borders
-  - posotion bottun at right bottom with before and after with white background to hide border of the box
-  - position ::after of text box at top left to hide border with some width
-  - border radius of text box at top right
+  - text section inside a box with borders @done
+  - posotion bottun at right bottom with before and after with white background to hide border of the box @done
+  - position ::after of text box at top left to hide border with some width @done
+  - border radius of text box at top right @done
 - Footer
   - Add the white logo @done
   - ajust the height of logo at footer @done

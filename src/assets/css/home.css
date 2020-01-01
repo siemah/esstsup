@@ -213,12 +213,23 @@
   max-width: 80%;
   padding: 2rem;
   padding-right: 6rem;
+  position: relative;
+}
+.about-us__text-block ::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  width: 4rem;
+  height: 3px;
+  background-color: var(--white);
 }
 .about-us__text-block p {
+  font-size: 1.25rem;
 }
 .about-us__link {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 0;
   transform: translateX(50%);
   opacity: 1 !important;
