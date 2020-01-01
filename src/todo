@@ -31,13 +31,13 @@
   - add filter to partenaires images @done
   - switch 2 white background on hover  @done
 - Slide
-  - Color of Title and subtitle at each slide must be blue
-  - Subtitle not bold like title
-  - arround button link
-  - Replace plus word via + icon
-  - Add a block of white background with opacity of .5
-  - decrease font size of title and subtitle
-  - Adapt white block under title & subtitle depend on them(border-radius, dimensions ..)
+  - Color of Title and subtitle at each slide must be blue @done
+  - Subtitle not bold like title @done
+  - arround button link @done
+  - Replace plus word via + icon @done
+  - Add a block of white background with opacity of .5 @done
+  - decrease font size of title and subtitle @done
+  - Adapt white block under title & subtitle depend on them(border-radius, dimensions ..) @done
   - Change Hero background color @done
   - Choose the right images from unsplash(see google doc) @done
   - Make the slider take the whole damn width @done
@@ -48,6 +48,14 @@
   - dont add arrow slider controler @done
   - remove padding of hero @done
   - make all content of slide animate each time user slide to next/prev slide @done
+- About esst
+  - Put title and logo image in same row @done
+  - Color of title to blue and increase it fontsize @done
+  - add left border to title and image row @done
+  - text section inside a box with borders
+  - posotion bottun at right bottom with before and after with white background to hide border of the box
+  - position ::after of text box at top left to hide border with some width
+  - border radius of text box at top right
 - Footer
   - Add the white logo @done
   - ajust the height of logo at footer @done

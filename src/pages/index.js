@@ -10,7 +10,7 @@ import '../assets/css/home.css';
 import RowBlock from "../components/home/RowBlock";
 import { Row, Container, Col } from "../components/layout/grid";
 import Card from "../components/home/Card";
-import { faChalkboardTeacher, faBookReader, faBrain, faAtom, faGlobe, faBuilding, faPhone, faEnvelope, faMobile, faMap, faMapMarker, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faChalkboardTeacher, faBookReader, faBrain, faAtom, faGlobe, faBuilding, faPhone, faEnvelope, faMobile, faMap, faMapMarker, faMapMarkerAlt, faPlus } from "@fortawesome/free-solid-svg-icons";
 import HomeHero from "../components/home/HomeHero";
 
 import AboutImg from '../assets/images/about-us.png';
@@ -20,6 +20,7 @@ import Gallery from "../components/home/Gallery";
 import Carousel from "../components/Carousel";
 import Testiminilas from "../components/home/Testiminilas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const IndexPage = ({ data }) => {
   const iconData1 = [
@@ -117,8 +118,33 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <HomeHero className={`home-hero wrapper__block pt0 pb0 mb0`} data={wpPages.edges || []} />
+      <Container className={`about-us__container pt1`}>
+        <Row className={`mb0`}>
+          <Col s={12} m={6}>
+            <h2 className={`about-us__title color-blue`}>À Propos De L’ESST</h2>
+          </Col>
+          <Col s={12} m={6} className={`about-us__image-container`}>
+            <img src={Logo} alt={`À Propos De L’ESST`} />
+          </Col>
+        </Row>
+        <Row className={`about-us__text-block ml0`}>
+          <Col s={12}>
+            <p className={`mb0`}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <AniLink to={`/a-propos`} className={`about-us__link card-ui__link`}>
+              En Savoir <FontAwesomeIcon icon={faPlus} fixedWidth={20} />
+            </AniLink>
+          </Col>
+        </Row>
+      </Container>
       <div className={``}>
         <RowBlock
+          isRight
           imageSource={Logo}
           link={`/`}
           firstHalfClassName={`flex-block flex-center`}

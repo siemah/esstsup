@@ -39,7 +39,7 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: -2px;
+  left: 0;
   width: 2px;
   top: 80%;
   background-color: rgba(255,255,255, .5); 
@@ -198,6 +198,45 @@
   color: var(--grey);
 }
 /* about us section */
+.about-us__container {
+  border-left: 2px solid var(--blue);
+}
+.about-us__title {
+  font-size: 6rem;
+  font-family: var(--fontFamilyTrade), sans-serif;
+}
+.about-us__text-block {
+  border: 2px solid var(--blue);
+  border-left: none;
+  border-top-right-radius: 20% 50%; 
+  position: relative;
+  max-width: 80%;
+  padding: 2rem;
+  padding-right: 6rem;
+}
+.about-us__text-block p {
+}
+.about-us__link {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  transform: translateX(50%);
+  opacity: 1 !important;
+}
+.about-us__link::before,
+.about-us__link::after {
+  content: '';
+  position: absolute;
+  top: -.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  background-color: var(--white);
+}
+.about-us__link::after {
+  top: auto;
+  bottom: -0.5rem;
+}
 
 .block__image {
   position: relative;
@@ -466,6 +505,7 @@ a:hover {
 }
 svg {
   max-height: 20px;
+  max-width: 20px;
 }
 
 input:focus {
@@ -568,7 +608,6 @@ input:focus {
     width: 100%;
     max-width: calc(100% - calc(50% - 280px)); */
   }
-  
   .hero .block__title {
     font-size: 2.4rem;
   }
@@ -578,6 +617,22 @@ input:focus {
   .slick-dots {
     right: 0.25rem !important;
   }
+  .about-us__text-block {
+    max-width: 100%;
+    border-top-right-radius: 4rem;
+    padding-left: 1rem;
+  }
+  .about-us__link,
+  .about-us__link::before,
+  .about-us__link::after {
+    position: relative;
+    transform: translate(0);
+    bottom: auto;
+    top: auto;
+    display: inline-block;
+    margin-top: .5rem;
+  }
+
 }
 @media only screen and (max-width: 601px) {
   .hero .container {
@@ -639,6 +694,9 @@ input:focus {
   .hero .block__title {
     font-size: 2.25rem !important;
   }
+  .about-us__title {
+    font-size: 4rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .block__title {
@@ -657,6 +715,9 @@ input:focus {
   }
   .hero .block__title {
     font-size: 3rem;
+  }
+  .about-us__title {
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 768px){
