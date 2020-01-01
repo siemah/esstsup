@@ -1,7 +1,7 @@
 import React, { useRef, useState, } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes, faSortDown, } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faSortDown, faAngleDown, } from '@fortawesome/free-solid-svg-icons'
 
 import { Container, } from './layout/grid';
 import { Button, } from './layout/form';
@@ -95,9 +95,9 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/sample-page/`} className={`row-menu__link`}>
+                to={`#`} className={`row-menu__link`}>
                 LMD
-                <FontAwesomeIcon icon={faSortDown} />
+                <FontAwesomeIcon icon={faAngleDown} />
               </AniLink>
               <ul className={'column-menu m0'}>
                 <li className={`row-menu__item block m0`}>
@@ -166,9 +166,9 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/sample-page/`} className={`row-menu__link`}>
+                to={`#`} className={`row-menu__link`}>
                 Formation continue
-                <FontAwesomeIcon icon={faSortDown} />
+                <FontAwesomeIcon icon={faAngleDown} />
               </AniLink>
               <ul className={'column-menu m0'}>
                 <li className={`row-menu__item block m0`}>
@@ -331,58 +331,24 @@ const Header = (props) => {
             </AniLink>
           </li>
           <li className={`row-menu__item`}>
-          <AniLink cover
-            direction="up"
-            duration={1.5}
-            bg="
-              /*url(https://source.unsplash.com/random) */
-              center / cover   /* position / size */
-              no-repeat        /* repeat */
-              fixed            /* attachment */
-              padding-box      /* origin */
-              content-box      /* clip */
-              var(--purple)            /* color */
-            " 
-            to={`/sample-page/`} className={`row-menu__link`}>
-            LMD
-            <FontAwesomeIcon icon={faSortDown} />
-          </AniLink>
-          <ul className={'column-menu m0'}>
-            <li className={`row-menu__item block m0`}>
-              <AniLink cover
-                direction="up"
-                duration={1.5}
-                bg="
-                  /*url(https://source.unsplash.com/random) */
-                  center / cover   /* position / size */
-                  no-repeat        /* repeat */
-                  fixed            /* attachment */
-                  padding-box      /* origin */
-                  content-box      /* clip */
-                  var(--purple)            /* color */
-                " 
-                to={`/sample-page/`} className={`row-menu__link`}>
-                M I
-              </AniLink>
-            </li>
-            <li className={`row-menu__item block m0`}>
-              <AniLink cover
-                direction="up"
-                duration={1.5}
-                bg="
-                  /*url(https://source.unsplash.com/random) */
-                  center / cover   /* position / size */
-                  no-repeat        /* repeat */
-                  fixed            /* attachment */
-                  padding-box      /* origin */
-                  content-box      /* clip */
-                  var(--purple)            /* color */
-                " 
-                to={`/sample-page/`} className={`row-menu__link`}>
-                S T
-              </AniLink>
-            </li>
-            <li className={`row-menu__item block m0`}>
+            <AniLink cover
+              direction="up"
+              duration={1.5}
+              bg="
+                /*url(https://source.unsplash.com/random) */
+                center / cover   /* position / size */
+                no-repeat        /* repeat */
+                fixed            /* attachment */
+                padding-box      /* origin */
+                content-box      /* clip */
+                var(--purple)            /* color */
+              " 
+              to={`#`} className={`row-menu__link`}>
+              LMD
+              <FontAwesomeIcon icon={faAngleDown} />
+            </AniLink>
+            <ul className={'column-menu m0'}>
+              <li className={`row-menu__item block m0`}>
                 <AniLink cover
                   direction="up"
                   duration={1.5}
@@ -396,10 +362,44 @@ const Header = (props) => {
                     var(--purple)            /* color */
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
-                  S M
+                  M I
                 </AniLink>
               </li>
-          </ul>
+              <li className={`row-menu__item block m0`}>
+                <AniLink cover
+                  direction="up"
+                  duration={1.5}
+                  bg="
+                    /*url(https://source.unsplash.com/random) */
+                    center / cover   /* position / size */
+                    no-repeat        /* repeat */
+                    fixed            /* attachment */
+                    padding-box      /* origin */
+                    content-box      /* clip */
+                    var(--purple)            /* color */
+                  " 
+                  to={`/sample-page/`} className={`row-menu__link`}>
+                  S T
+                </AniLink>
+              </li>
+              <li className={`row-menu__item block m0`}>
+                  <AniLink cover
+                    direction="up"
+                    duration={1.5}
+                    bg="
+                      /*url(https://source.unsplash.com/random) */
+                      center / cover   /* position / size */
+                      no-repeat        /* repeat */
+                      fixed            /* attachment */
+                      padding-box      /* origin */
+                      content-box      /* clip */
+                      var(--purple)            /* color */
+                    " 
+                    to={`/sample-page/`} className={`row-menu__link`}>
+                    S M
+                  </AniLink>
+                </li>
+            </ul>
           </li>
           <li className={`row-menu__item`}>
             <AniLink cover
@@ -414,9 +414,9 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/sample-page/`} className={`row-menu__link`}>
+              to={`#`} className={`row-menu__link`}>
               Formation continue
-              <FontAwesomeIcon icon={faSortDown} />
+              <FontAwesomeIcon icon={faAngleDown} />
             </AniLink>
             <ul className={'column-menu m0'}>
               <li className={`row-menu__item block m0`}>
