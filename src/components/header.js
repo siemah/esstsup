@@ -1,5 +1,5 @@
 import React, { useRef, useState, } from "react";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+// import Link from "gatsby-plugin-transition-link/Link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes, faSortDown, faAngleDown, } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,6 +9,7 @@ import { Button, } from './layout/form';
 import Logo from '../assets/images/logo-white-esst.png';
 
 import '../assets/css/header.css';
+import { Link } from "gatsby";
 
 /**
  * Header menu
@@ -36,7 +37,7 @@ const Header = (props) => {
     <header className={`main--menu__wrapper`}>
       <nav className={`main--menu__block center`}>
         <Container className={`flex-block relative`}>
-          <AniLink
+          <Link
             cover
             direction="down"
             duration={1.5}
@@ -50,7 +51,7 @@ const Header = (props) => {
             "
            to={`/`} className={'brand-logo left'}>
             <img className={`logo__image mb0`} src={Logo} alt={`esst logo`} />
-          </AniLink>
+          </Link>
           <Button onClick={onToggleMenu} className={`main-menu__toggle-button right ${showMobileMenu ? 'show' : ''}`}>
             {
               showMobileMenu 
@@ -66,7 +67,7 @@ const Header = (props) => {
           </form> */}
           <ul className={`row-menu m0`}>
             <li className={`row-menu__item`}>
-              <AniLink cover
+              <Link cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -80,10 +81,10 @@ const Header = (props) => {
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
                 A Propos
-              </AniLink>
+              </Link>
             </li>
             <li className={`row-menu__item`}>
-              <AniLink cover
+              <Link cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -95,13 +96,13 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`#`} className={`row-menu__link`}>
+                to={`/`} className={`row-menu__link`}>
                 LMD
                 <FontAwesomeIcon icon={faAngleDown} />
-              </AniLink>
+              </Link>
               <ul className={'column-menu m0'}>
                 <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -115,10 +116,10 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     M I
-                  </AniLink>
+                  </Link>
                 </li>
                 <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -132,10 +133,10 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     S T
-                  </AniLink>
+                  </Link>
                 </li>
                 <li className={`row-menu__item block m0`}>
-                    <AniLink cover
+                    <Link cover
                       direction="up"
                       duration={1.5}
                       bg="
@@ -149,12 +150,12 @@ const Header = (props) => {
                       " 
                       to={`/sample-page/`} className={`row-menu__link`}>
                       S M
-                    </AniLink>
+                    </Link>
                   </li>
               </ul>
             </li>
             <li className={`row-menu__item`}>
-              <AniLink cover
+              <Link cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -166,13 +167,13 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`#`} className={`row-menu__link`}>
+                to={`/`} className={`row-menu__link`}>
                 Formation continue
                 <FontAwesomeIcon icon={faAngleDown} />
-              </AniLink>
+              </Link>
               <ul className={'column-menu m0'}>
                 <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -186,10 +187,10 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     Informa
-                  </AniLink>
+                  </Link>
                 </li>
                 <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -203,10 +204,10 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     Medical
-                  </AniLink>
+                  </Link>
                 </li>
                 <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -220,10 +221,10 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     Telecom
-                  </AniLink>
+                  </Link>
                 </li>
                 <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -237,12 +238,12 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     Pharma
-                  </AniLink>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className={`row-menu__item`}>
-              <AniLink cover
+              <Link cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -256,10 +257,10 @@ const Header = (props) => {
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
                 Accueil
-              </AniLink>
+              </Link>
             </li>
             <li className={`row-menu__item`}>
-              <AniLink cover
+              <Link cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -273,10 +274,10 @@ const Header = (props) => {
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
                 Partenaires
-              </AniLink>
+              </Link>
             </li>
             <li className={`row-menu__item`}>
-              <AniLink cover
+              <Link cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -290,14 +291,14 @@ const Header = (props) => {
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
                 Contact
-              </AniLink>
+              </Link>
             </li>
           </ul>
           <div className={`wrapper-mobile__menu ${showMobileMenu ? 'show' : ''}`} onClick={onToggleMenu} />
         </Container>
         <ul ref={listMemu} className={`mobile-menu row-menu m0 flex-block flex-column`}>
           <li className={`row-menu__item`}>
-            <AniLink cover
+            <Link cover
               direction="up"
               duration={1.5}
               bg="
@@ -311,10 +312,10 @@ const Header = (props) => {
               " 
               to={`/sample-page/`} className={`row-menu__link`}>
               Accueil
-            </AniLink>
+            </Link>
           </li>
           <li className={`row-menu__item`}>
-            <AniLink cover
+            <Link cover
               direction="up"
               duration={1.5}
               bg="
@@ -328,10 +329,10 @@ const Header = (props) => {
               " 
               to={`/sample-page/`} className={`row-menu__link`}>
               A Propos
-            </AniLink>
+            </Link>
           </li>
           <li className={`row-menu__item`}>
-            <AniLink cover
+            <Link cover
               direction="up"
               duration={1.5}
               bg="
@@ -343,13 +344,13 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`#`} className={`row-menu__link`}>
+              to={`/`} className={`row-menu__link`}>
               LMD
               <FontAwesomeIcon icon={faAngleDown} />
-            </AniLink>
+            </Link>
             <ul className={'column-menu m0'}>
               <li className={`row-menu__item block m0`}>
-                <AniLink cover
+                <Link cover
                   direction="up"
                   duration={1.5}
                   bg="
@@ -363,10 +364,10 @@ const Header = (props) => {
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
                   M I
-                </AniLink>
+                </Link>
               </li>
               <li className={`row-menu__item block m0`}>
-                <AniLink cover
+                <Link cover
                   direction="up"
                   duration={1.5}
                   bg="
@@ -380,10 +381,10 @@ const Header = (props) => {
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
                   S T
-                </AniLink>
+                </Link>
               </li>
               <li className={`row-menu__item block m0`}>
-                  <AniLink cover
+                  <Link cover
                     direction="up"
                     duration={1.5}
                     bg="
@@ -397,12 +398,12 @@ const Header = (props) => {
                     " 
                     to={`/sample-page/`} className={`row-menu__link`}>
                     S M
-                  </AniLink>
+                  </Link>
                 </li>
             </ul>
           </li>
           <li className={`row-menu__item`}>
-            <AniLink cover
+            <Link cover
               direction="up"
               duration={1.5}
               bg="
@@ -414,13 +415,13 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`#`} className={`row-menu__link`}>
+              to={`/`} className={`row-menu__link`}>
               Formation continue
               <FontAwesomeIcon icon={faAngleDown} />
-            </AniLink>
+            </Link>
             <ul className={'column-menu m0'}>
               <li className={`row-menu__item block m0`}>
-                <AniLink cover
+                <Link cover
                   direction="up"
                   duration={1.5}
                   bg="
@@ -434,10 +435,10 @@ const Header = (props) => {
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
                   Informa
-                </AniLink>
+                </Link>
               </li>
               <li className={`row-menu__item block m0`}>
-                <AniLink cover
+                <Link cover
                   direction="up"
                   duration={1.5}
                   bg="
@@ -451,10 +452,10 @@ const Header = (props) => {
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
                   Medical
-                </AniLink>
+                </Link>
               </li>
               <li className={`row-menu__item block m0`}>
-                <AniLink cover
+                <Link cover
                   direction="up"
                   duration={1.5}
                   bg="
@@ -468,10 +469,10 @@ const Header = (props) => {
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
                   Telecom
-                </AniLink>
+                </Link>
               </li>
               <li className={`row-menu__item block m0`}>
-                <AniLink cover
+                <Link cover
                   direction="up"
                   duration={1.5}
                   bg="
@@ -485,12 +486,12 @@ const Header = (props) => {
                   " 
                   to={`/sample-page/`} className={`row-menu__link`}>
                   Pharma
-                </AniLink>
+                </Link>
               </li>
             </ul>
           </li>
           <li className={`row-menu__item`}>
-            <AniLink cover
+            <Link cover
               direction="up"
               duration={1.5}
               bg="
@@ -504,10 +505,10 @@ const Header = (props) => {
               " 
               to={`/sample-page/`} className={`row-menu__link`}>
               Partenaires
-            </AniLink>
+            </Link>
           </li>
           <li className={`row-menu__item`}>
-            <AniLink cover
+            <Link cover
               direction="up"
               duration={1.5}
               bg="
@@ -521,7 +522,7 @@ const Header = (props) => {
               " 
               to={`/sample-page/`} className={`row-menu__link`}>
               Contact
-            </AniLink>
+            </Link>
           </li>
         </ul>
           

@@ -18,12 +18,18 @@
   -
 
 - About esst
-  - 
+
+- Icons section
+  - change font family to trade @done
+  - get the background from designer
+  - increase the height of icon container @done
+  - surround each item icon in link @done
 
 - Contact
   - Increase title font size @done
   - change icons 
   - remove flex block at left side of form
+  - remove margin between contact section with footer
   - put phone number in one row @done
   - Add box shadow 2 form @done
   - Add error message 2 each field @done

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -20,7 +20,7 @@ import Gallery from "../components/home/Gallery";
 import Carousel from "../components/Carousel";
 import Testiminilas from "../components/home/Testiminilas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+// import Link from "gatsby-plugin-transition-link/Link";
 
 const IndexPage = ({ data }) => {
   const iconData1 = [
@@ -48,32 +48,36 @@ const IndexPage = ({ data }) => {
   ];
   const statisticsIcons = [
     {
-      title: "99+",
-      content: "Teachers",
+      title: "Télécommunication",
+      content: "Licence en",
       icon: faAtom,
+      bgIconClassName: 'bg-lightblue',
+      iconColorClassName: 'color-white',
+      link: '/licence-genie-des-telecommunications-et-reseaux-gtr-licence-professionnalisante/',
+    },
+    {
+      title: "Informatique",
+      content: "Licence en",
+      icon: faGlobe,
       bgIconClassName: 'bg-blue',
       iconColorClassName: 'color-white',
+      link: '/licence-en-informatique/',
     },
     {
-      title: "42",
-      content: "Students",
-      icon: faGlobe,
+      title: "Électronique",
+      content: "Licence en",
+      icon: faBookReader,
       bgIconClassName: 'bg-pink',
       iconColorClassName: 'color-white',
+      link: '/licence-en-electronique/',
     },
     {
-      title: "700",
-      content: "Lessons",
-      icon: faBookReader,
-      bgIconClassName: 'bg-darkpurple',
-      iconColorClassName: 'color-white',
-    },
-    {
-      title: "95%",
-      content: "Success",
+      title: "Chimie",
+      content: "Licence en",
       icon: faBuilding,
       bgIconClassName: 'bg-green',
       iconColorClassName: 'color-white',
+      link: '/licence-en-chimie/',
     }
   ];
   const { allWordpressPage: wpPages } = data;
@@ -113,8 +117,11 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+
       <SEO title="Home" />
+
       <HomeHero className={`home-hero wrapper__block pt0 pb0 mb0`} data={wpPages.edges || []} />
+
       <Container className={`about-us__container pt2`}>
         <Row className={`mb0`}>
           <Col s={12} m={6}>
@@ -133,14 +140,17 @@ const IndexPage = ({ data }) => {
               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <AniLink to={`/a-propos`} className={`about-us__link card-ui__link`}>
-              En Savoir <FontAwesomeIcon icon={faPlus} fixedWidth={20} />
-            </AniLink>
+            <Link to={`/a-propos`} className={`about-us__link card-ui__link`}>
+              En Savoir <FontAwesomeIcon icon={faPlus} />
+            </Link>
           </Col>
         </Row>
       </Container>
 
-      {/* <BlockIcon forSmallSize={1} containerClassName={`wrapper__block container-xs`} data={iconData1} /> */}
+      <div className={`wrapper__block icons-container bg-orange relative`}>
+        <BlockIcon itemClassName={`center`} forMediumSize={2} forSmallSize={2} containerClassName={`container`} data={statisticsIcons} />
+      </div>
+
       <div className={`wrapper__block bg-grey pt2`}>
         <Container className={`partenaire__container`}>
           <Row>
@@ -197,6 +207,7 @@ const IndexPage = ({ data }) => {
 
         </Container>
       </div>
+
       <div className={``}>
         {/* <RowBlock
           isRight
@@ -213,31 +224,29 @@ const IndexPage = ({ data }) => {
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
         /> */}
       </div>
+
       <RowBlock
-          containerClassName={`pt1 `}
-          children={<RegisterForm className={'bg-blue mb0'} />}
-          isRight
-          title={'Inscription et renseignements'}
-          titleClassName={`main__title-block color-blue`}
-          contentComponent={ContactContent}
-        />
+        containerClassName={`pt1 `}
+        children={<RegisterForm className={'bg-blue mb0'} />}
+        isRight
+        title={'Inscription et renseignements'}
+        titleClassName={`main__title-block color-blue`}
+        contentComponent={ContactContent}
+      />
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
   query {
-        allWordpressPage {
-        edges {
+    allWordpressPage {
+      edges {
         node {
         id
-          wordpress_id
-      title
-      path
-      content
-          featured_media {
-        source_url
-      }
+        wordpress_id
+        title
+        path
+        content
       }
     }
   }

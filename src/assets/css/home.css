@@ -31,7 +31,7 @@
   width: 100%;
   transform: translate(-50%, 0%);
   background-color: rgba(255,255,255, .5);
-  z-index: -1;
+  z-index: -1 !important;
   border-top-right-radius: 20% 50%;
   border-bottom-right-radius: 20% 50%;
 }
@@ -187,14 +187,14 @@
   font-size: 2.25rem;
 }
 .card__title {
-  font-family: var(--fontFamilyJanna), sans-serif;
-  font-size: 1.5rem;
+  font-family: var(--fontFamilyTrade), sans-serif;
+  font-size: 1.75rem;
   letter-spacing: 0;
   font-weight: bold;
 }
 .card__content {
-  font-family: var(--fontFamilyJanna), sans-serif;
-  font-size: 1rem;
+  font-family: var(--fontFamilyTrade), sans-serif;
+  font-size: 1.25rem;
   color: var(--grey);
 }
 /* about us section */
@@ -390,6 +390,28 @@ a:hover {
   height: 100%;
 }
 
+/* icons block */
+.icons-container {
+  /* background: url('https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80')
+    no-repeat center fixed; */
+  /* background-size: contain; */
+  object-fit: cover;
+}
+.icons-container, 
+.icons-container .card__content,
+.icons-container a {
+  font-family: var(--fontFamilyTrade), sans-serif;
+  color: #ffffff;
+}
+.icons-container a:hover .card__icon-container {
+  box-shadow: 0px 0.75rem 0.75rem 0.5rem rgba(0,0,0,.2);
+}
+.icons-container .card__icon-container {
+  height: 9rem;
+  width: 9rem;
+  box-shadow: 0px 0.75rem 0.75rem 0.25rem rgba(0,0,0,.2);
+  transition: box-shadow .5s;
+}
 /* Testimonials */
 .testimonials-block .slick-slider {
   margin-left: 0;
@@ -516,6 +538,9 @@ a:hover {
 }
 .color-green {
   color: var(--green);
+}
+.bg-orange {
+  background-color: var(--orange);
 }
 .color-pink {
   color: var(--pink);
@@ -666,7 +691,13 @@ input:focus {
   .about-us__link::after {
     display: none;
   }
-
+  .icons-container .card__icon-container {
+    height: 8rem;
+    width: 8rem;
+  }
+  .icons-container .card__title {
+    font-size: 1.25rem;
+  }
 }
 @media only screen and (max-width: 601px) {
   .hero .container {
