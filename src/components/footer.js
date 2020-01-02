@@ -12,7 +12,7 @@ import '../assets/css/footer.css';
 
 const isInViewport = element => {
   // check ig element has getBoundingClientRect function
-  if( !('getBoundingClientRect' in element) ) return true;
+  if (!('getBoundingClientRect' in element)) return true;
   let rect = element.getBoundingClientRect();
   return (
     rect.left >= 0 &&
@@ -37,22 +37,22 @@ const Footer = (props) => {
     let _elms = document.querySelectorAll('.js-animate');
     let _images = document.querySelectorAll('.js-animate-image');
     _elms.forEach(element => {
-      if(isInViewport(element))
+      if (isInViewport(element))
         element.classList.add('slide-up');
     });
     _images.forEach(img => {
-      if(isInViewport(img))
+      if (isInViewport(img))
         img.classList.add('reveal-image');
     });
   }
 
   useEffect(() => {
-    if(typeof window !== `undefined`) {
+    if (typeof window !== `undefined`) {
       window.addEventListener('scroll', onScroll);
       onScroll();
     }
     return () => {
-      if(typeof window !== `undefined`) {
+      if (typeof window !== `undefined`) {
         window.removeEventListener('scroll', onScroll);
       }
     }
@@ -61,55 +61,46 @@ const Footer = (props) => {
   return (
     <footer className={`main-footer__block`}>
       <Container>
-        <Row className={`footer__top-block`}>
-          <Col s={12} m={4}>
-            <Link to={`/`} className={'mb1'}>
-              <img className={`logo__image mb1`} src={Logo} alt={`esst logo`} />
-            </Link>
-            <p className={`brand-description muted mb1`}>
-              lorem ipsum dolor sit amet amek a winathana nigh amel.
-              lorem ipsum dolor sit amet amek a winathana nigh amel.
+        <div className={`footer__top-block  relative`}>
+          <Row className={'mb0 footer-menu flex-block'}>
+            <Col s={12} m={5} className={`footer__box-item p2`}>
+              <Link to={`/`} className={'mb1'}>
+                <img className={`logo__image mb1`} src={Logo} alt={`esst logo`} />
+              </Link>
+              <p className={`brand-description muted mb1`}>
+                lorem ipsum dolor sit amet amek a winathana nigh amel.
+                lorem ipsum dolor sit amet amek a winathana nigh amel.
             </p>
-            {/* move this section to be in contact section on left of form */}
-            <ul className={`social__menu m0`}>
-              <li className={`social__item left`}>
-                <a href={`facebook`}>
-                  <FontAwesomeIcon icon={faPhone} />
-                </a>
-              </li>
-              <li className={`social__item left`}>
-                <a href={`facebook`}>
-                  <FontAwesomeIcon icon={faMailBulk} />
-                </a>
-              </li>
-              <li className={`social__item left`}>
-                <a href={`facebook`}>
-                  <FontAwesomeIcon icon={faMap} />
-                </a>
-              </li>
-            </ul>
-          </Col>
-          <Col s={12} m={4}>
-            <h2 className={`footer__title uppercase`}>Nos Formations</h2>
-            <ul className={`list m0`}>
-              <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence Télécommunication</Link></li>
-              <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>TLicence en Informatique </Link></li>
-              <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence en Électronique</Link></li>
-              <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence en Chimie</Link></li>
-            </ul>
-          </Col>
-          <Col s={12} m={4}>
-            <h2 className={`footer__title uppercase`}>Réseaux Sociaux</h2>
-            <ul className={`list m0`}>
-              <li className={`list-item mb1`} >
-                <a className={`list-link`} href={`https://www.facebook.com/esst-sup`}>Facebook</a>
-              </li>
-              <li className={`list-item mb1`} >
-                <a className={`list-link`} href={`https://www.instagram.com/esst-sup`}>Instagram</a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+              {/* move this section to be in contact section on left of form */}
+            </Col>
+            <Col s={12} m={4} className={`footer__box-item p2 bg-darkblue`}>
+              <h2 className={`footer__title uppercase mb1`}>Nos Formations</h2>
+              <ul className={`list m0`}>
+                <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence Télécommunication</Link></li>
+                <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence en Informatique </Link></li>
+                <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence en Électronique</Link></li>
+                <li className={`list-item mb1`} ><Link className={`list-link`} to={`/`}>Licence en Chimie</Link></li>
+              </ul>
+            </Col>
+            <Col s={12} m={3} className={`footer__box-item p2 bg-darkenblue`}>
+              <h2 className={`footer__title uppercase mb1`}>Réseaux Sociaux</h2>
+              <ul className={`list m0`}>
+                <li className={`list-item flex-block center mb1`} >
+                  <div className={`card__icon-container flex-block flex-center center rounded mb0 `}>
+                    <FontAwesomeIcon icon={faMailBulk} />
+                  </div>
+                  <a className={`list-link flex-block flex-center`} href={`https://www.facebook.com/esst-sup`}>ESSTSUP</a>
+                </li>
+                <li className={`list-item flex-block mb1 center`} >
+                  <div className={`card__icon-container flex-block flex-center center rounded mb0 `}>
+                    <FontAwesomeIcon icon={faMailBulk} />
+                  </div>
+                  <a className={`list-link flex-block flex-center`} href={`https://www.facebook.com/esst-sup`}>ESST_SUP</a>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </div>
         <Row className={'mb0'}>
           <Col s={12}>
             <p className={`coyright__block mb0`}>

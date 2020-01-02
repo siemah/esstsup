@@ -2,27 +2,61 @@
   background-color: var(--blue);
   color: var(--white);
   font-size: 1rem;
-  padding: 2rem 0;
+  padding: 0;
   letter-spacing: .3px;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: -1;
+  font-weight: bold;
 }
 .main-content {
   margin-bottom: 360px;
   background-color: var(--white);
 }
+.footer__top-block::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: -10px;
+  height: 100%;
+  background-color: #012b57;
+  z-index: -1;
+  transform: translateX(100%);
+}
+.footer__top-block .row::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 100%;
+  background-color: #012b57;
+  position: absolute;
+  right: -3px;
+}
+.footer__box-item:last-child .list-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer__top-block .card__icon-container {
+  border: 1px solid #ffffff;
+  padding: 0;
+  height: 35px;
+  min-height: 35px;
+  width: 35px;
+  min-width: 35px;
+  margin-right: 0.5rem;
+}
+.footer__box-item {
+}
 .main-footer__block ul {
   list-style: none;
 }
 /* 1st column */
-.footer__top-block {
-  padding-top: 2rem;
-}
+
 .brand-description {
-  font-family: var(--fontFamilyJanna);
+  font-family: var(--fontFamilyTrade);
 }
 .social__item {
   margin-right: 0.5rem;
@@ -38,13 +72,13 @@
 /* 2nd column */
 .footer__title {
   color: var(--white);
-  font-family: var(--fontFamilyJanna);
-  font-size: 1rem;
+  font-family: var(--fontFamilyTrade);
+  font-size: 1.5rem;
   font-weight: bold;
   padding: .75rem 0 .5rem 0;
-}
+} 
 .list-link {
-  font-family: var(--fontFamilyJanna);
+  font-family: var(--fontFamilyTrade);
   letter-spacing: .3px;
   color: #f5f5f5;
   font-size: 1rem;
@@ -77,6 +111,13 @@
   .main-content {
     margin-bottom: 470px;
   }
+  .main-footer__block,
+  .list-link {
+    font-size: .75rem;
+  }
+  .footer__title {
+    font-size: 1.25rem;
+  }
 }
 @media only screen and (max-width: 610px) {
   .main-content {
@@ -85,5 +126,22 @@
   .main-footer__block {
     position: relative;
     z-index: 10;
+  }
+  .main-footer__block,
+  .list-link {
+    font-size: 1rem;
+  }
+  .footer__title {
+    font-size: 1.25rem;
+  }
+  .main-footer__block .container {
+    min-width: 100%;
+  }
+  .footer-menu.flex-block {
+    flex-direction: column;
+  }
+  .coyright__block {
+    padding: 1rem;
+    font-size: .8rem;
   }
 }

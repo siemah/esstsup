@@ -7,58 +7,34 @@
   - flexboxify the header @done
   - position the mobile menu absolute and hide it on desktop @done
   - -redesign the menu for mobile version @done
+  - Add preinscription to menu
   - add logo to mobile version(see with mounir)
   - add grey color to toggle button icon @done
   - Animate the menu of mobile version when close(maybe change the whole damn animation2) @done
-- Contact
-  - Put the right content @done
-  - add custom style for list @done
-  - before each contact item add an icon(use icon in footer) @done
-  - remove border-radius of form and input fields, button,.. @done
-  - change the placeholder of each input to fit the right content @done
-  - respect the chart graphic(blue, white and grey in logo) @done
-  - remove margin bottom of form @done
-  - remove shadow of icons and background color @done
-  - remove underline of links
-- About esst @done
-  - add logo @done
-  - put the content @done
 - Partenaires
-  - wrape the block inside wrapper__block @done
-  - divide the block to 2 rows @done
-  - add space arround each partenaire with his neighboard @done
-  - put grey as background @done
-  - add filter to partenaires images @done
-  - switch 2 white background on hover  @done
+  - remove sub-title element at top of block @done
+
 - Slide
-  - Color of Title and subtitle at each slide must be blue @done
-  - Subtitle not bold like title @done
-  - arround button link @done
-  - Replace plus word via + icon @done
-  - Add a block of white background with opacity of .5 @done
-  - decrease font size of title and subtitle @done
-  - Adapt white block under title & subtitle depend on them(border-radius, dimensions ..) @done
-  - Change Hero background color @done
-  - Choose the right images from unsplash(see google doc) @done
-  - Make the slider take the whole damn width @done
-  - Responsive @done
-  - move dots to right side of slider @done
-  - animate them(not sure) @done
-  - remove default arrows @done
-  - dont add arrow slider controler @done
-  - remove padding of hero @done
-  - make all content of slide animate each time user slide to next/prev slide @done
+  -
+
 - About esst
-  - Put title and logo image in same row @done
-  - Color of title to blue and increase it fontsize @done
-  - add left border to title and image row @done
-  - text section inside a box with borders @done
-  - posotion bottun at right bottom with before and after with white background to hide border of the box @done
-  - position ::after of text box at top left to hide border with some width @done
-  - border radius of text box at top right @done
+  - 
+
+- Contact
+  - Increase title font size @done
+  - change icons 
+  - remove flex block at left side of form
+  - put phone number in one row @done
+  - Add box shadow 2 form @done
+  - Add error message 2 each field @done
+  - change padding and marging of container @done
+
 - Footer
+  - remove icons @done
+  - change the background color of 2nd and 3th columns @done
+  - change the font family 2trade @done
+  - increase font-size/font-weight of footer title @done
   - Add the white logo @done
   - ajust the height of logo at footer @done
   - Put the content @done
-  - Search for social network icons
-  - Add social network links in the last section
+  - Put social media icons from designer with right links
