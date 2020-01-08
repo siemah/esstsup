@@ -120,7 +120,7 @@ const IndexPage = ({ data }) => {
 
       <SEO title="Home" />
 
-      <HomeHero className={`home-hero wrapper__block pt0 pb0 mb0`} data={wpPages.edges || []} />
+      <HomeHero className={`home-hero wrapper__block relative pt0 pb0 mb0`} data={wpPages.edges || []} />
 
       <Container className={`about-us__container pt2`}>
         <Row className={`mb0`}>

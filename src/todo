@@ -5,5 +5,19 @@
   - add & position preinscription link to right of header menu @done
   - background of preinscription link blue @done
   - remove preinscription hover effect @done
+  - fix header menu for mobile devices
+  - Replace burger menu icon with bento/grilled menu
 
-- 
+- Carousel
+  - Remove white section @done
+  - Put designer icons at assets folder @done
+  - Add a sublayer color or mask of opacity @done
+  - Change color of text in carousel to be white @done
+  - Put icon near to each slide before title text(to discuss later) @done
+  - Redesign link of carousel(leading to specified page) @done
+  - Extend the width of .hero-text to take 100%  of parent width @done
+  - Add dots section under text secion and bottom of carousel @done
+  - Add custom arrows to control carousel(next/prev) @done
+  - Position custom arrows to be at bottom right @done
+  - Add bottom arrow or mouse to indicate to user to scroll down(not for now)
+  - Fix z-index of the 2nd and 3th slide @done

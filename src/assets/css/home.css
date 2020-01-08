@@ -18,43 +18,33 @@
 .hero .block__title {
   font-size: 4.5rem;
 }
+.hero .slick-slide .block__title img {
+  max-width: 2.5rem;
+  min-width: 2.5rem;
+  display: initial;
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
 .hero-text {
-  z-index: 10;
-  width: 45%;
-}
-.hero-text::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 20%;
-  bottom: 20%;
   width: 100%;
-  transform: translate(-50%, 0%);
-  background-color: rgba(255,255,255, .5);
-  z-index: -1 !important;
-  border-top-right-radius: 20% 50%;
-  border-bottom-right-radius: 20% 50%;
-}
-.hero-text::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 2px;
-  top: 80%;
-  background-color: rgba(255,255,255, .5); 
-  transform: translateY(0%);
+  z-index: 10;
 }
 .hero-text .block__sub-title,
 .hero-text .block__title,
 .hero__action {
   text-align: left;
-  color: var(--blue);
+  color: var(--white);
 }
 .hero__action .card-ui__link {
-  padding: 0.5rem 2rem;
+  padding: .5rem 0 1rem 0;
+  background-color: transparent;
   position: relative;
-  left: 3rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--white);
+  border-radius: 0;
+}
+.hero__link-icon {
+  margin-left: 3rem;
 }
 .hero-text .block__sub-title {
   font-weight: normal;
@@ -64,6 +54,7 @@
   float: left;
 }
 .hero-image {
+  filter: grayscale(60%) opacity(75%);
   position: absolute;
   right: 0;
   top: 0;
@@ -78,6 +69,9 @@
 }
 .home-hero.hero .slick-active:not(:first-child) {
   transform: translateX(0);
+}
+.home-hero.hero::before {
+
 }
 
 
@@ -603,58 +597,53 @@ input:focus {
 .home-hero .slick-track div:focus {
   outline: none;
 }
-.home-hero .slick-dots {
-  bottom: 2rem;
-  top: 0;
-}
-.home-hero .slick-dots li {
-  margin: 0.5rem 0;
-}
-.home-hero .slick-dots li button {
-  padding-left: .5rem;
-  font-weight: bold;
-}
-.home-hero .slick-dots li button:before,
-.home-hero .slick-dots li button:after {
-  background-color: var(--blue);
-  opacity: 1;
-  content: '';
-  transition: .5s;
-  bottom: 0;
-  width: .25rem;
-  left: auto;
-  right: 0;
-}
-.home-hero .slick-dots li button:after {
-  content: '0';
-  font-family: inherit;
-  left: -.5rem;
-  position: relative;
-  transition: none;
-}
-.home-hero .slick-dots li {
-  height: 2rem;
-}
-.home-hero .slick-dots li.slick-active button{
+.home-hero .slick-dots li button:before {
   color: var(--white);
-  font-size: 1.25rem;
-  border-radius: .75rem 0 0 .75rem;
-  background-color: var(--blue);
-  height: 2rem;
-  font-family: var(--fontFamilyTrade), sans-serif;
-  padding-right: 0;
+  opacity: .7;
 }
-.home-hero .slick-dots li.slick-active button::before {
-  width: 0;
+.home-hero .slick-dots li.slick-active button:before {
+  color: var(--white);
+  opacity: 1;
+  width: 25px;
+}
+.slick-dots li:first-child {
+  margin-left: 0;
+}
+.slick-active.slick-slide {
+  z-index: 100 !important;
 }
 .home-hero .slick-dots {
-  right: 2rem;
-  width: 2rem;
-  height: 100%;
-  display: flex !important;
+  position: relative;
+  bottom: 3rem;
+  width: auto;
+  max-height: 30px;
+  min-height: 30px;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 2;
+  /* display: flex !important;
   flex-direction: column;
   justify-content: center;
-    align-items: center;
+    align-items: center; */
+}
+.carousel__control-container {
+  position: absolute;
+  bottom: 6rem;
+  left: auto;
+  right: 0;
+  z-index: 1;
+  align-items: flex-end;
+  min-height: auto !important;
+}
+.carousel__control-wrapper {
+  position: absolute;
+  right: 0;
+  z-index: 20;
+}
+.carousel__button-control {
+  width: 2rem;
+  background-color: transparent;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 576px){
@@ -767,14 +756,6 @@ input:focus {
   .block__title {
     font-size: 2.5rem;
   }
-  .hero-text {
-    width: 90%;
-  }
-  .hero-text::before {
-    width: 120%;
-    transform: translate(-30%, -0%);
-    border-radius: 0;
-  }
   .hero .block__sub-title {
     font-size: 2rem;
   }
@@ -797,10 +778,6 @@ input:focus {
   .hero .block__title {
     font-size: 2.75rem;
   }
-  .hero-text::before{
-    border-top-right-radius: 23% 50%;
-    border-bottom-right-radius: 23% 50%;
-  }
 }
 @media only screen and (min-width: 992px){
   .hero .container {
@@ -811,10 +788,6 @@ input:focus {
   .hero .block__title {
     font-size: 3.5rem;
   }
-  .hero-text::before{
-    border-top-right-radius: 18% 50%;
-    border-bottom-right-radius: 18% 50%;
-  }
 }
 @media only screen and (min-width: 1200px) {
   .hero div.container.mr0 {
@@ -822,10 +795,6 @@ input:focus {
   }
   .arrow-controls {
     left: -1%;
-  }
-  .hero-text::before{
-    border-top-right-radius: 15% 50%;
-    border-bottom-right-radius: 15% 50%;
   }
   .hero .block__title {
     font-size: 4.5rem;

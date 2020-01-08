@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { useRef, } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, } from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltRight, faLongArrowAltLeft, } from '@fortawesome/free-solid-svg-icons'
 
 import Hero from '../Hero';
-import { Container, Col, Row, } from '../layout/grid';
-import AboutUs from '../../assets/images/about-us.png';
+import { Container, } from '../layout/grid';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Button } from '../layout/form';
+
+import TelecomIcon from '../../assets/images/icons/telecom.svg';
+import ChimieIcon from '../../assets/images/icons/chimie.svg';
+import ElectroIcon from '../../assets/images/icons/electro.svg';
+import InformatiqueIcon from '../../assets/images/icons/info.svg';
 
 export default function HomeHero({ data, className = '', }) {
 
+  const sliderRef = useRef();
+
   React.useEffect(() => {
-    if(typeof window !== `undefined`) {
+    if (typeof window !== `undefined`) {
       let firsytSlideElementToAnimate = document.querySelectorAll('.slick-slide.slick-active .js-animate-sliding');
       firsytSlideElementToAnimate.forEach(elem => {
         elem.classList.add(`slide-${elem.dataset.slide}`)
@@ -32,6 +39,7 @@ export default function HomeHero({ data, className = '', }) {
     autoplay: true,
     autoplaySpeed: 5000,
     dots: true,
+    dotsClass: 'slick-dots container',
     fade: true,
     arrows: false,
     waitForAnimate: false,
@@ -58,25 +66,32 @@ export default function HomeHero({ data, className = '', }) {
       }
     },
   };
+
+  const onSlideToNext = () => sliderRef.current.slickNext();
+  const onSlideToPrev = () => sliderRef.current.slickPrev();
+
   return (
     <Hero fullHeight={true} className={`${className}`}>
 
-      <Slider {...settings} >
+      <Slider {...settings} ref={sliderRef}>
 
         <div>
           <div className={`hero-image`} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80)` }} />
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
               <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
-              <h2 className={`block__title block  text-left js-animate-sliding js-delay-1 center mb1`} data-slide='left'>Licence En Télécommunication </h2>
+              <h2 className={`block__title block  text-left js-animate-sliding js-delay-1 center mb1`} data-slide='left'>
+                <img src={TelecomIcon} alt='Télécommunication icon' />
+                Licence En Télécommunication
+              </h2>
               <div className={`hero__action block js-animate-sliding js-delay-2`} data-slide='up'>
                 <AniLink
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
                   className={`card-ui__link radius-1 left`}>
-                  En Savoir <FontAwesomeIcon icon={faPlus} />
-              </AniLink>
+                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                </AniLink>
               </div>
             </div>
           </Container>
@@ -85,15 +100,17 @@ export default function HomeHero({ data, className = '', }) {
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
               <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
-              <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>Licence En Informatique</h2>
+              <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>
+                <img src={InformatiqueIcon} alt='Télécommunication icon' />
+                Licence En Informatique</h2>
               <div className={`hero__action block`}>
                 <AniLink
                   paintDrip
                   hex={`#004197`}
-                  to={`/sample-page/`}
+                  to={`/licence-en-info/`}
                   className={`card-ui__link radius-1 left js-animate-sliding js-delay-2`} data-slide='up'>
-                  En Savoir <FontAwesomeIcon icon={faPlus} />
-              </AniLink>
+                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                </AniLink>
               </div>
             </div>
           </Container>
@@ -103,15 +120,17 @@ export default function HomeHero({ data, className = '', }) {
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
               <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
-              <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>Licence En Électronique</h2>
+              <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>
+                <img src={ElectroIcon} alt='Télécommunication icon' />
+                Licence En Électronique</h2>
               <div className={`hero__action block js-animate-sliding js-delay-2`} data-slide='up'>
                 <AniLink
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
                   className={`card-ui__link radius-1 left`}>
-                  En Savoir <FontAwesomeIcon icon={faPlus} />
-              </AniLink>
+                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                </AniLink>
               </div>
             </div>
           </Container>
@@ -121,22 +140,24 @@ export default function HomeHero({ data, className = '', }) {
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
               <h3 className={`block__sub-title block text-left js-animate-sliding js-delay-0 center mb1`} data-slide='down'>Nos Licences</h3>
-              <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>Licence En Chimie</h2>
+              <h2 className={`block__title block js-animate-sliding js-delay-1 text-left center mb1`} data-slide='left'>
+                <img src={ChimieIcon} alt='Télécommunication icon' />
+                Licence En Chimie</h2>
               <div className={`hero__action block js-animate-sliding js-delay-2`} data-slide='up'>
                 <AniLink
                   paintDrip
                   hex={`#004197`}
                   to={`/sample-page/`}
                   className={`card-ui__link radius-1 left`}>
-                  En Savoir <FontAwesomeIcon icon={faPlus} />
+                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
               </div>
             </div>
           </Container>
-            <div className={`hero-image`} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)` }} />
+          <div className={`hero-image`} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)` }} />
         </div>
-        
-        
+
+
         {/* <div>
           <Container className={`flex-block`}>
             <div className={'hero-text flex-block flex-column flex-center'}>
@@ -157,6 +178,17 @@ export default function HomeHero({ data, className = '', }) {
         </div> */}
 
       </Slider>
+
+      <Container className={`carousel__control-container`}>
+        <div className={`carousel__control-wrapper flex-block flex-column`}>
+          <Button className={`carousel__button-control prev`} n onClick={onSlideToPrev}>
+            <FontAwesomeIcon icon={faLongArrowAltLeft} className={`carousel__control-icon`} />
+          </Button>
+          <Button className={`carousel__button-control next`} n onClick={onSlideToNext}>
+            <FontAwesomeIcon icon={faLongArrowAltRight} className={`carousel__control-icon`} />
+          </Button>
+        </div>
+      </Container>
 
 
       {
