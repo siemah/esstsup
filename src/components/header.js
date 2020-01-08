@@ -34,8 +34,8 @@ const Header = (props) => {
   }
 
   return (
-    <header className={`main--menu__wrapper`}>
-      <nav className={`main--menu__block`}>
+    <header className={``}>
+      <nav className={`main--menu__wrapper main--menu__block`}>
         <Container className={`flex-block relative`}>
           <Link
             cover
@@ -52,7 +52,7 @@ const Header = (props) => {
            to={`/`} className={'brand-logo left'}>
             <img className={`logo__image mb0`} src={Logo} alt={`esst logo`} />
           </Link>
-          <Button onClick={onToggleMenu} className={`main-menu__toggle-button right ${showMobileMenu ? 'show' : ''}`}>
+          <Button onClick={onToggleMenu} className={`main-menu__toggle-button bg-blue right ${showMobileMenu ? 'show' : ''}`}>
             {
               showMobileMenu 
                 ? <FontAwesomeIcon icon={faTimes} />
@@ -313,7 +313,8 @@ const Header = (props) => {
           </ul>
           <div className={`wrapper-mobile__menu ${showMobileMenu ? 'show' : ''}`} onClick={onToggleMenu} />
         </Container>
-        <ul ref={listMemu} className={`mobile-menu row-menu m0 flex-block flex-column`}>
+      </nav>
+      <ul ref={listMemu} className={`mobile-menu row-menu m0 flex-block flex-column`}>
           <li className={`row-menu__item`}>
             <Link cover
               direction="up"
@@ -542,8 +543,6 @@ const Header = (props) => {
             </Link>
           </li>
         </ul>
-          
-      </nav>
     </header>
   );
 }

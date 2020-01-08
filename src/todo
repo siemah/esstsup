@@ -5,8 +5,9 @@
   - add & position preinscription link to right of header menu @done
   - background of preinscription link blue @done
   - remove preinscription hover effect @done
-  - fix header menu for mobile devices
-  - Replace burger menu icon with bento/grilled menu
+  - uppercase text of header menu link @done
+  - fix unresponsive header menu for mobile devices @done
+  - Replace burger menu icon with bento/grilled menu(not possible) @done
 
 - Carousel
   - Remove white section @done

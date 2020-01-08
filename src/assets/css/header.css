@@ -83,6 +83,7 @@
   z-index: 10;
   color: inherit;
   padding: 0.5rem 1rem;
+  text-transform: capitalize;
 }
 .row-menu li:hover .column-menu {
   visibility: visible;
@@ -156,9 +157,14 @@
   width: var(--mainHeight);
   padding: 1rem;
   position: relative;
-  background-color: var(--white);
   border-radius: 100%;
   margin-top: 0.5rem;
+  z-index: 1;
+  border-radius: 0;
+}
+.main-menu__toggle-button svg {
+  color: white;
+  max-width: 14px;
 }
 .brand-logo + .main-menu__toggle-button {
   visibility: hidden;
@@ -240,7 +246,7 @@
 }
 .wrapper-mobile__menu.show {
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
 }
 .brand-logo + .main-menu__toggle-button.show {
   z-index: 10;
@@ -269,21 +275,6 @@
   }
 }
 @media only screen and (max-width: 771px) {
-  .brand-logo + .main-menu__toggle-button {
-    visibility: visible;
-  }
-  .row-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    max-width: 200px;
-    z-index: 100;
-    background-color: var(--blue);
-    visibility: hidden;
-    padding-top: 0.5rem;
-    transform: translateX(-100%);
-  }
   .row-menu__item {
     display: block;
     width: 100%;
@@ -315,6 +306,24 @@
   }
 }
 @media only screen and (max-width: 991px) {
+  .brand-logo + .main-menu__toggle-button {
+    visibility: visible;
+    display: initial;
+    right: 0;
+    position: absolute;
+  }
+  .row-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 200px;
+    z-index: 100;
+    background-color: var(--blue);
+    visibility: hidden;
+    padding-top: 0.5rem;
+    transform: translateX(-100%);
+  }
   .row-menu li {
     margin-right: 0;
   }
