@@ -5,8 +5,8 @@
   background-color: var(--blue);
 }
 .hero-full_height {
-  height: 90vh;
-  min-height: 500px;
+  height: 100vh;
+  min-height: 550px;
 }
 
 @media (min-width: 576px) {

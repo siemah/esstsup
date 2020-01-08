@@ -59,7 +59,7 @@
 }
 .row-menu li {
   display: inline-block;
-  margin-right: .25rem;
+  /* margin-right: .25rem; */
   position: relative;
   color: var(--white);
   border-radius: .25rem;
