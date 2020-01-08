@@ -1,46 +1,9 @@
 - Header
-  - remove padding of .main--menu__block then add it to li item @done
-  - add bar at top of link when user hover above it rather than change the background @done
-  - change the arrow down shape at header menu @done
-  - change the background-/color @done
-  - put the content @done
-  - flexboxify the header @done
-  - position the mobile menu absolute and hide it on desktop @done
-  - -redesign the menu for mobile version @done
-  - Add preinscription to menu
-  - add logo to mobile version(see with mounir)
-  - add grey color to toggle button icon @done
-  - Animate the menu of mobile version when close(maybe change the whole damn animation2) @done
-- Partenaires
-  - remove sub-title element at top of block @done
+  - Make main menu to be above of carousel @done
+  - add zindex to logo @done
+  - remove center class from .center main--menu__block @done
+  - add & position preinscription link to right of header menu @done
+  - background of preinscription link blue @done
+  - remove preinscription hover effect @done
 
-- Slide
-  -
-
-- About esst
-
-- Icons section
-  - change font family to trade @done
-  - get the background from designer
-  - increase the height of icon container @done
-  - surround each item icon in link @done
-
-- Contact
-  - Increase title font size @done
-  - change icons 
-  - remove flex block at left side of form
-  - remove margin between contact section with footer
-  - put phone number in one row @done
-  - Add box shadow 2 form @done
-  - Add error message 2 each field @done
-  - change padding and marging of container @done
-
-- Footer
-  - remove icons @done
-  - change the background color of 2nd and 3th columns @done
-  - change the font family 2trade @done
-  - increase font-size/font-weight of footer title @done
-  - Add the white logo @done
-  - ajust the height of logo at footer @done
-  - Put the content @done
-  - Put social media icons from designer with right links
+- 

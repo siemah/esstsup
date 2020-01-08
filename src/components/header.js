@@ -35,7 +35,7 @@ const Header = (props) => {
 
   return (
     <header className={`main--menu__wrapper`}>
-      <nav className={`main--menu__block center`}>
+      <nav className={`main--menu__block`}>
         <Container className={`flex-block relative`}>
           <Link
             cover
@@ -80,6 +80,23 @@ const Header = (props) => {
                   var(--purple)            /* color */
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
+                Accueil
+              </Link>
+            </li>
+            <li className={`row-menu__item`}>
+              <Link cover
+                direction="up"
+                duration={1.5}
+                bg="
+                  /*url(https://source.unsplash.com/random) */
+                  center / cover   /* position / size */
+                  no-repeat        /* repeat */
+                  fixed            /* attachment */
+                  padding-box      /* origin */
+                  content-box      /* clip */
+                  var(--purple)            /* color */
+                " 
+                to={`/a-propos-de-lesst/`} className={`row-menu__link`}>
                 A Propos
               </Link>
             </li>
@@ -96,7 +113,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/`} className={`row-menu__link`}>
+                className={`row-menu__link`}>
                 LMD
                 <FontAwesomeIcon icon={faAngleDown} />
               </Link>
@@ -256,23 +273,6 @@ const Header = (props) => {
                   var(--purple)            /* color */
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
-                Accueil
-              </Link>
-            </li>
-            <li className={`row-menu__item`}>
-              <Link cover
-                direction="up"
-                duration={1.5}
-                bg="
-                  /*url(https://source.unsplash.com/random) */
-                  center / cover   /* position / size */
-                  no-repeat        /* repeat */
-                  fixed            /* attachment */
-                  padding-box      /* origin */
-                  content-box      /* clip */
-                  var(--purple)            /* color */
-                " 
-                to={`/sample-page/`} className={`row-menu__link`}>
                 Partenaires
               </Link>
             </li>
@@ -291,6 +291,23 @@ const Header = (props) => {
                 " 
                 to={`/sample-page/`} className={`row-menu__link`}>
                 Contact
+              </Link>
+            </li>
+            <li className={`row-menu__item bg-blue right`}>
+              <Link cover
+                direction="up"
+                duration={1.5}
+                bg="
+                  /*url(https://source.unsplash.com/random) */
+                  center / cover   /* position / size */
+                  no-repeat        /* repeat */
+                  fixed            /* attachment */
+                  padding-box      /* origin */
+                  content-box      /* clip */
+                  var(--purple)            /* color */
+                " 
+                to={`/sample-page/`} className={`row-menu__link`}>
+                Preinscription
               </Link>
             </li>
           </ul>
