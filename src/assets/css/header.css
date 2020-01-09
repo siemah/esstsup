@@ -330,6 +330,21 @@
   .row-menu li a {
     font-size: .8rem;
   }
+  .column-menu {
+    position: relative;
+    top: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .row-menu li:hover  .column-menu,
+  .row-menu li:active .column-menu,
+  .row-menu li:focus  .column-menu {
+    height: auto;
+    overflow: visible;
+  }
+  .column-menu::before {
+    display: none;
+  }
 }
 
 .scaleUp.mobile-menu {

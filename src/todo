@@ -6,15 +6,16 @@
   - recaptcha on production mode later
 
 - Nos Formations
-  - Add a background color to icon container 
-  - Stylize the width and height of formations icons 
-  - Stylize subtitle and title
-  - Make card action link style similar 2link at carousel section
+  - Add a background color to icon container @done
+  - Stylize the width and height of formations icons @done
+  - Stylize subtitle and title @done
+  - Make card action link style similar 2link at carousel section @done
 
 - Partenaires 
   - change the background color from grey to lightgrey(#f1f1f1) @done
 
 - Header
+  - fix submenu on mobile version
   - Make main menu to be above of carousel @done
   - add zindex to logo @done
   - remove center class from .center main--menu__block @done

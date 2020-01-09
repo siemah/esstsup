@@ -101,7 +101,7 @@ const Header = (props) => {
               </Link>
             </li>
             <li className={`row-menu__item`}>
-              <Link cover
+              <a cover
                 direction="up"
                 duration={1.5}
                 bg="
@@ -113,10 +113,11 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
+                href={`#`}
                 className={`row-menu__link`}>
                 LMD
                 <FontAwesomeIcon icon={faAngleDown} />
-              </Link>
+              </a>
               <ul className={'column-menu m0'}>
                 <li className={`row-menu__item block m0`}>
                   <Link cover
@@ -421,7 +422,7 @@ const Header = (props) => {
             </ul>
           </li>
           <li className={`row-menu__item`}>
-            <Link cover
+            <a cover
               direction="up"
               duration={1.5}
               bg="
@@ -433,10 +434,10 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/`} className={`row-menu__link`}>
+              href={`#`} className={`row-menu__link`}>
               Formation continue
               <FontAwesomeIcon icon={faAngleDown} />
-            </Link>
+            </a>
             <ul className={'column-menu m0'}>
               <li className={`row-menu__item block m0`}>
                 <Link cover
