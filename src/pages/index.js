@@ -13,7 +13,10 @@ import Card from "../components/home/Card";
 import { faChalkboardTeacher, faBookReader, faBrain, faAtom, faGlobe, faBuilding, faPhone, faEnvelope, faMobile, faMap, faMapMarker, faMapMarkerAlt, faPlus, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import HomeHero from "../components/home/HomeHero";
 
-import AboutImg from '../assets/images/about-us.png';
+import TelecomIcon from '../assets/images/icons/telecom.svg';
+import InfoIcon from '../assets/images/icons/info.svg';
+import ElectroIcon from '../assets/images/icons/electro.svg';
+import ChimieIcon from '../assets/images/icons/chimie.svg';
 import Logo from '../assets/images/esst-logo.png';
 import RegisterForm from "../components/RegisterForm";
 import Gallery from "../components/home/Gallery";
@@ -83,8 +86,8 @@ const IndexPage = ({ data }) => {
   const { allWordpressPage: wpPages } = data;
 
   const ContactContent = () => (
-    <>
-      <h3 className={`color-blue `}>
+    <div className={``}>
+      <h3 className={`color-blue`}>
         ÉCOLE SUPÉRIEURE DES SCIENCES ET TECHNOLOGIES (ESST)
       </h3>
       <ul className={`contacts-list m0 mb1`}>
@@ -112,7 +115,7 @@ const IndexPage = ({ data }) => {
           </a>
         </li>
       </ul>
-    </>
+    </div>
   );
 
   return (
@@ -125,8 +128,8 @@ const IndexPage = ({ data }) => {
       <div className={`wrapper__block bg-lightgrey`}>
         <Container className={`about-us__container`}>
           <Row className={`mb0`}>
-            <Col s={12} m={6}>
-              <h2 className={`main__title-block color-blue`}>À Propos De L’ESST</h2>
+            <Col s={12} m={6} className={`dots-label__container`}>
+              <h2 className={`main__title-block color-blue bg-lightgrey`}>À Propos De L’ESST</h2>
               <p className={`about-us__text-content`}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley.
@@ -151,16 +154,86 @@ const IndexPage = ({ data }) => {
         </Container>
       </div>
 
-
-      <div className={`wrapper__block icons-container bg-orange relative`}>
-        <BlockIcon itemClassName={`center`} forMediumSize={2} forSmallSize={2} containerClassName={`container`} data={statisticsIcons} />
+      <div className={`wrapper__block cards-container relative`}>
+        <Container>
+          <Row>
+            <Col s={12} m={6} l={3}>
+              <div className={`card-container`}>
+                <div className={`card-icon__container center`}>
+                  <img src={TelecomIcon} alt={'telecom'} />
+                </div>
+                <div className={'card-description__container'}>
+                  <h3 className={`card__subtitle`}>Licence En</h3>
+                  <h3 className={`card__title`}>Telecommunications</h3>
+                </div>
+                <div className={`card__action`}>
+                  <Link to={`/te`}>
+                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                  </Link>
+                </div>
+              </div>
+            </Col>
+            <Col s={12} m={6} l={3} className={`mb2`}>
+              <div className={`card-container`}>
+                <div className={`card-icon__container center`}>
+                  <img src={InfoIcon} alt={'telecom'} />
+                </div>
+                <div className={'card-description__container'}>
+                  <h3 className={`card__subtitle`}>Licence En</h3>
+                  <h3 className={`card__title`}>Informatique</h3>
+                </div>
+                <div className={`card__action`}>
+                  <Link to={`/te`}>
+                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                  </Link>
+                </div>
+              </div>
+            </Col>
+            <Col s={12} m={6} l={3} className={`mb2`}>
+              <div className={`card-container`}>
+                <div className={`card-icon__container center`}>
+                  <img src={ElectroIcon} alt={'telecom'} />
+                </div>
+                <div className={'card-description__container'}>
+                  <h3 className={`card__subtitle`}>Licence En</h3>
+                  <h3 className={`card__title`}>Electronique</h3>
+                </div>
+                <div className={`card__action`}>
+                  <Link to={`/te`}>
+                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                  </Link>
+                </div>
+              </div>
+            </Col>
+            <Col s={12} m={6} l={3}>
+              <div className={`card-container`}>
+                <div className={`card-icon__container center`}>
+                  <img src={ChimieIcon} alt={'telecom'} />
+                </div>
+                <div className={'card-description__container'}>
+                  <h3 className={`card__subtitle`}>Licence En</h3>
+                  <h3 className={`card__title`}>Chimie</h3>
+                </div>
+                <div className={`card__action`}>
+                  <Link to={`/te`}>
+                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                  </Link>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
-      <div className={`wrapper__block bg-grey pt2`}>
+      {/* <div className={`wrapper__block icons-container bg-orange relative`}>
+        <BlockIcon itemClassName={`center`} forMediumSize={2} forSmallSize={2} containerClassName={`container`} data={statisticsIcons} />
+      </div> */}
+
+      <div className={`wrapper__block bg-lightgrey`}>
         <Container className={`partenaire__container`}>
           <Row>
-            <Col s={12}>
-              <h2 className={`main__title-block color-blue js-animate mb1`}>Nos Partenaires</h2>
+            <Col s={12} className={`dots-label__container`}>
+              <h2 className={`main__title-block color-blue bg-lightgrey js-animate mb1`}>Nos Partenaires</h2>
             </Col>
           </Row>
           <Row>
@@ -231,11 +304,12 @@ const IndexPage = ({ data }) => {
       </div>
 
       <RowBlock
-        containerClassName={`pt1 `}
+        containerClassName={`wrapper__block `}
         children={<RegisterForm className={'bg-blue mb0'} />}
         isRight
         title={'Inscription et renseignements'}
-        titleClassName={`main__title-block color-blue`}
+        secondHalfClassName={`dots-label__container`}
+        titleClassName={`main__title-block color-blue bg-white`}
         contentComponent={ContactContent}
       />
     </Layout>

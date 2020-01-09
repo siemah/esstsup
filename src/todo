@@ -5,6 +5,14 @@
   - add some esthetics design @done
   - recaptcha on production mode later
 
+- Nos Formations
+  - Add a background color to icon container 
+  - Stylize the width and height of formations icons 
+  - Stylize subtitle and title
+  - Make card action link style similar 2link at carousel section
+
+- Partenaires 
+  - change the background color from grey to lightgrey(#f1f1f1) @done
 
 - Header
   - Make main menu to be above of carousel @done

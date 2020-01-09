@@ -5,7 +5,7 @@ import { Container, Row, Col } from '../layout/grid'
 
 import AboutUsImage from '../../assets/images/about-us.png';
 
-export default function RowBlock({ containerClassName='', children, titleClassName='', imageSource, firstHalfClassName='', subtitle, title, content, contentComponent: C, link, isRight=false}) {
+export default function RowBlock({ containerClassName='', children, secondHalfClassName='', titleClassName='', imageSource, firstHalfClassName='', subtitle, title, content, contentComponent: C, link, isRight=false}) {
   const MainContent = () => content ? <p>{content}</p> : <C />
   return (
     <div className={`wrapper__block fake-bg${isRight ? '-right' : ''} ${containerClassName}`}>
@@ -18,7 +18,7 @@ export default function RowBlock({ containerClassName='', children, titleClassNa
                 : children
               }
             </Col>
-            <Col s={12} m={7} className={`block__description flex-block flex-column flex-center`}>
+            <Col s={12} m={7} className={`block__description flex-block flex-column flex-center ${secondHalfClassName}`}>
               {
                 subtitle &&
                 <h3 className={`block__subtitle-title js-animate  block mb1`}>{subtitle}</h3>
