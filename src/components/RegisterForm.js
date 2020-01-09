@@ -25,7 +25,7 @@ export default function RegisterForm({ className=''}) {
       </Row>
       <Row className="js-slide-from-down" data-delay={0.1}>
         <Col s='12'>
-          <textarea rows={4} className={`block`} placeholder={`Message`}></textarea>
+          <textarea name={`Message`} rows={4} className={`block`} placeholder={`Message`}></textarea>
         </Col>
       </Row>
       <Row className="mb0 js-slide-from-down" data-delay={0.1}>
