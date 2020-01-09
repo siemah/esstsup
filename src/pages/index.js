@@ -156,18 +156,18 @@ const IndexPage = ({ data }) => {
 
       <div className={`wrapper__block cards-container relative`}>
         <Container>
-          <Row>
-            <Col s={12} m={6} l={3}>
+          <Row className={`mb0`}>
+            <Col s={12} m={6} l={3} className={`mb2`}>
               <div className={`card-container`}>
                 <div className={`card-icon__container center`}>
                   <img src={TelecomIcon} alt={'telecom'} />
                 </div>
                 <div className={'card-description__container'}>
                   <h3 className={`card__subtitle`}>Licence En</h3>
-                  <h3 className={`card__title`}>Telecommunications</h3>
+                  <h3 className={`card__title`}>Télécommunication</h3>
                 </div>
                 <div className={`card__action`}>
-                  <Link to={`/te`}>
+                  <Link to={`/licence-en-telecommunication//`}>
                     En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
@@ -183,7 +183,7 @@ const IndexPage = ({ data }) => {
                   <h3 className={`card__title`}>Informatique</h3>
                 </div>
                 <div className={`card__action`}>
-                  <Link to={`/te`}>
+                  <Link to={`/licence-en-informatique/`}>
                     En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
@@ -196,10 +196,10 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className={'card-description__container'}>
                   <h3 className={`card__subtitle`}>Licence En</h3>
-                  <h3 className={`card__title`}>Electronique</h3>
+                  <h3 className={`card__title`}>Électronique</h3>
                 </div>
                 <div className={`card__action`}>
-                  <Link to={`/te`}>
+                  <Link to={`/licence-en-electronique/`}>
                     En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
@@ -215,7 +215,7 @@ const IndexPage = ({ data }) => {
                   <h3 className={`card__title`}>Chimie</h3>
                 </div>
                 <div className={`card__action`}>
-                  <Link to={`/te`}>
+                  <Link to={`/licence-en-chimie/`}>
                     En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
