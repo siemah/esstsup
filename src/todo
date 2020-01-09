@@ -45,7 +45,11 @@
   - Add bottom arrow or mouse to indicate to user to scroll down(not for now) @done
   - Fix z-index of the 2nd and 3th slide @done
 
+- Contact
+  - remove border radius on submit button
+
 - Footer 
   - remove margin added before footer @done
   - fix disable displaying wrapper-block when user click somewhere on body @done
-  - add the right link at footer
+  - add the right link at footer @done
+  - add social media icons @done

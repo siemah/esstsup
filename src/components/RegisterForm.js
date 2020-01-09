@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { useState, } from 'react';
 import { Row, Col } from './layout/grid';
 import { FormField, Button } from './layout/form';
 
 import '../assets/css/register-form.css';
 
 export default function RegisterForm({ className=''}) {
-  // const [formstate, setFormstate] = useState({});
   return (
-    <form className={`register-form__block ${className}`} action="#" netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
+    <form className={`register-form__block ${className}`} netlify-honeypot="bot-field" action='/' name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="preinscription" />
       <Row className="mb0 js-slide-from-down" data-delay={0.1}>
         <Col s='12'>
-          <FormField errorMessage={'Nom est requis'} name='nom-complet' placeholder='Nom Complet' />
+          <FormField name='nom-complet' placeholder='Nom Complet' />
         </Col>
       </Row>
       <Row className="mb0 js-slide-from-down" data-delay={0.1}>
@@ -31,7 +30,7 @@ export default function RegisterForm({ className=''}) {
       </Row>
       <Row className="mb0 js-slide-from-down" data-delay={0.1}>
         <Col s='12'>
-          <Button className="right button__material form__button_submit capitalize" type='submit' name='envoyer'>Envoyer</Button>
+          <Button className="right button__material form__button_submit capitalize" style={{borderRadius: 0}} type='submit' name='envoyer'>ENVOYER</Button>
         </Col>
       </Row>
     </form>
