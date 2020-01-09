@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactMapGL, { Marker } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
-import LocationImg from '../../assets/images/location.svg'
+import LocationImg from '../assets/images/location.svg'
 
 class Map extends React.Component {
 
