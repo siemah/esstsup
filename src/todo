@@ -1,3 +1,10 @@
+- Preinscription
+  - implement anf form @done
+  - copy/paste all fields from esst-sup.com @done
+  - position form at center of page
+  - add some esthetics design
+
+
 - Header
   - Make main menu to be above of carousel @done
   - add zindex to logo @done
@@ -22,3 +29,7 @@
   - Position custom arrows to be at bottom right @done
   - Add bottom arrow or mouse to indicate to user to scroll down(not for now)
   - Fix z-index of the 2nd and 3th slide @done
+
+- Footer 
+  - remove margin added before footer 
+  - fix disable displaying wrapper-block when user click somewhere on body
