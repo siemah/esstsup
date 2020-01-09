@@ -1,8 +1,9 @@
 - Preinscription
   - implement anf form @done
   - copy/paste all fields from esst-sup.com @done
-  - position form at center of page
-  - add some esthetics design
+  - position form at center of page @done
+  - add some esthetics design @done
+  - recaptcha on production mode later
 
 
 - Header

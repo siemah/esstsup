@@ -16,12 +16,12 @@ const PreinscriptionPage = ({ data }) => {
       <SEO title="Preinscription" />
       <div className={`fake-block`} />
       <div className={`preinscription-block`}>
-        <Container className="">
+        <Container className="flex-block flex-center">
           <form className={`preinscription__form`} action="#" netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="preinscription" />
             <Row className="">
               <Col s='12'>
-                <h2 className='center'>Préinscription</h2>
+                <h1 className='form-legend center'>Pré-inscrivez-vous en remplissant ce formulaire</h1>
               </Col>
             </Row>
             <Row className="">
@@ -50,23 +50,29 @@ const PreinscriptionPage = ({ data }) => {
             <Row className="">
               <Col s='12'>
                 <label htmlFor={'niveau'}>NIVEAU D'ÉTUDES ACTUEL</label>
-                <select id={'niveau'} name={`niveau-d-etude-actuel`}>
-                  <option value={'BAC'}>BAC</option>
-                  <option value={'BAC+1'}>BAC +1</option>
-                  <option value={'BAC+2'}>BACK +2</option>
-                  <option value={'BAC+3'}>BACK +3</option>
-                </select>
+                <div className={`select-container relative`}>
+                  <select id={'niveau'} className={`form-field-block__input`} name={`niveau-d-etude-actuel`}>
+                    <option value={'BAC'}>Sélectionnez votre niveau d'études</option>
+                    <option value={'BAC'}>BAC</option>
+                    <option value={'BAC+1'}>BAC +1</option>
+                    <option value={'BAC+2'}>BACK +2</option>
+                    <option value={'BAC+3'}>BACK +3</option>
+                  </select>
+                </div>
               </Col>
             </Row>
             <Row className="">
               <Col s='12'>
                 <label htmlFor={'formation'}>FORMATION RECHERCHÉE</label>
-                <select id={'formation'} name={`niveau-d-etude-actuel`}>
-                  <option value={'Licence Télécommunications'}>Licence Télécommunications</option>
-                  <option value={'Licence en informatique'}>Licence en informatique</option>
-                  <option value={'Licence en électronique'}>Licence en électronique</option>
-                  <option value={'Licence en chimie'}>Licence en chimie</option>
-                </select>
+                <div className={`select-container relative`}>
+                  <select id={'formation'} className={`form-field-block__input`} name={`niveau-d-etude-actuel`}>
+                    <optgroup>Sélectionnez une formation</optgroup>
+                    <option value={'Licence Télécommunications'}>Licence Télécommunications</option>
+                    <option value={'Licence en informatique'}>Licence en informatique</option>
+                    <option value={'Licence en électronique'}>Licence en électronique</option>
+                    <option value={'Licence en chimie'}>Licence en chimie</option>
+                  </select>
+                </div>
               </Col>
             </Row>
             <Row className="">
@@ -82,7 +88,7 @@ const PreinscriptionPage = ({ data }) => {
             </Row>
             <Row className="">
               <Col s='12'>
-                <Button className="button__material form__button_submit capitalize" type='submit' name='envoyer'>Valider votre Préinscription </Button>
+                <Button className="button__material bg-blue form__button_submit right" type='submit' name='envoyer'>ENVOYER</Button>
               </Col>
             </Row>
           </form>
