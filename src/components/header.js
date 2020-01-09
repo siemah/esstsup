@@ -79,7 +79,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/sample-page/`} className={`row-menu__link`}>
+                to={`/`} className={`row-menu__link`}>
                 Accueil
               </Link>
             </li>
@@ -132,7 +132,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     M I
                   </Link>
                 </li>
@@ -149,7 +149,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     S T
                   </Link>
                 </li>
@@ -166,7 +166,7 @@ const Header = (props) => {
                         content-box      /* clip */
                         var(--purple)            /* color */
                       " 
-                      to={`/sample-page/`} className={`row-menu__link`}>
+                      to={`/`} className={`row-menu__link`}>
                       S M
                     </Link>
                   </li>
@@ -203,7 +203,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     Informa
                   </Link>
                 </li>
@@ -220,7 +220,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     Medical
                   </Link>
                 </li>
@@ -237,7 +237,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     Telecom
                   </Link>
                 </li>
@@ -254,7 +254,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     Pharma
                   </Link>
                 </li>
@@ -273,7 +273,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/sample-page/`} className={`row-menu__link`}>
+                to={`/`} className={`row-menu__link`}>
                 Partenaires
               </Link>
             </li>
@@ -290,7 +290,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/sample-page/`} className={`row-menu__link`}>
+                to={`/`} className={`row-menu__link`}>
                 Contact
               </Link>
             </li>
@@ -307,7 +307,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/sample-page/`} className={`row-menu__link`}>
+                to={`/`} className={`row-menu__link`}>
                 Preinscription
               </Link>
             </li>
@@ -329,7 +329,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/sample-page/`} className={`row-menu__link`}>
+              to={`/`} className={`row-menu__link`}>
               Accueil
             </Link>
           </li>
@@ -346,7 +346,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/sample-page/`} className={`row-menu__link`}>
+              to={`/`} className={`row-menu__link`}>
               A Propos
             </Link>
           </li>
@@ -381,7 +381,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/sample-page/`} className={`row-menu__link`}>
+                  to={`/`} className={`row-menu__link`}>
                   M I
                 </Link>
               </li>
@@ -398,7 +398,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/sample-page/`} className={`row-menu__link`}>
+                  to={`/`} className={`row-menu__link`}>
                   S T
                 </Link>
               </li>
@@ -415,7 +415,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/sample-page/`} className={`row-menu__link`}>
+                    to={`/`} className={`row-menu__link`}>
                     S M
                   </Link>
                 </li>
@@ -452,7 +452,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/sample-page/`} className={`row-menu__link`}>
+                  to={`/`} className={`row-menu__link`}>
                   Informa
                 </Link>
               </li>
@@ -469,7 +469,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/sample-page/`} className={`row-menu__link`}>
+                  to={`/`} className={`row-menu__link`}>
                   Medical
                 </Link>
               </li>
@@ -486,7 +486,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/sample-page/`} className={`row-menu__link`}>
+                  to={`/`} className={`row-menu__link`}>
                   Telecom
                 </Link>
               </li>
@@ -503,7 +503,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/sample-page/`} className={`row-menu__link`}>
+                  to={`/`} className={`row-menu__link`}>
                   Pharma
                 </Link>
               </li>
@@ -522,7 +522,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/sample-page/`} className={`row-menu__link`}>
+              to={`/`} className={`row-menu__link`}>
               Partenaires
             </Link>
           </li>
@@ -539,7 +539,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/sample-page/`} className={`row-menu__link`}>
+              to={`/`} className={`row-menu__link`}>
               Contact
             </Link>
           </li>

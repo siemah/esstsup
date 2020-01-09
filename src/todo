@@ -48,3 +48,4 @@
 - Footer 
   - remove margin added before footer @done
   - fix disable displaying wrapper-block when user click somewhere on body @done
+  - add the right link at footer

@@ -23,7 +23,7 @@ const WordpressPage = ({ data, ...rest }) => {
     <Layout>
       <SEO title={yoast_title} meta={socialMetas} lang={data.site.siteMetadata.lang} {...metas} />
       <Hero className={`mb0 wrapper__block`} fullHeight={false}>
-        <Container>
+        <Container className={`flex-block flex-center`}>
           <h1 className={`page__title center`}>{title}</h1>
         </Container>
       </Hero>

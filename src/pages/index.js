@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => {
                   <h3 className={`card__title`}>Télécommunication</h3>
                 </div>
                 <div className={`card__action`}>
-                  <Link to={`/licence-en-telecommunication//`}>
+                  <Link to={`/licence-en-telecommunication/`}>
                     En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>

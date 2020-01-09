@@ -88,7 +88,7 @@ export default function HomeHero({ data, className = '', }) {
                 <AniLink
                   paintDrip
                   hex={`#004197`}
-                  to={`/sample-page/`}
+                  to={`/licence-en-telecommunication/`}
                   className={`card-ui__link radius-1 left`}>
                   En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
@@ -107,7 +107,7 @@ export default function HomeHero({ data, className = '', }) {
                 <AniLink
                   paintDrip
                   hex={`#004197`}
-                  to={`/licence-en-info/`}
+                  to={`/licence-en-informatique/`}
                   className={`card-ui__link radius-1 left js-animate-sliding js-delay-2`} data-slide='up'>
                   En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
@@ -127,7 +127,7 @@ export default function HomeHero({ data, className = '', }) {
                 <AniLink
                   paintDrip
                   hex={`#004197`}
-                  to={`/sample-page/`}
+                  to={`/licence-en-electronique/`}
                   className={`card-ui__link radius-1 left`}>
                   En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
@@ -147,7 +147,7 @@ export default function HomeHero({ data, className = '', }) {
                 <AniLink
                   paintDrip
                   hex={`#004197`}
-                  to={`/sample-page/`}
+                  to={`/licence-en-chimie/`}
                   className={`card-ui__link radius-1 left`}>
                   En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
