@@ -10,7 +10,7 @@ import '../assets/css/home.css';
 import RowBlock from "../components/home/RowBlock";
 import { Row, Container, Col } from "../components/layout/grid";
 import Card from "../components/home/Card";
-import { faChalkboardTeacher, faBookReader, faBrain, faAtom, faGlobe, faBuilding, faPhone, faEnvelope, faMobile, faMap, faMapMarker, faMapMarkerAlt, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faChalkboardTeacher, faBookReader, faBrain, faAtom, faGlobe, faBuilding, faPhone, faEnvelope, faMobile, faMap, faMapMarker, faMapMarkerAlt, faPlus, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import HomeHero from "../components/home/HomeHero";
 
 import AboutImg from '../assets/images/about-us.png';
@@ -122,30 +122,35 @@ const IndexPage = ({ data }) => {
 
       <HomeHero className={`home-hero wrapper__block relative pt0 pb0 mb0`} data={wpPages.edges || []} />
 
-      <Container className={`about-us__container pt2`}>
-        <Row className={`mb0`}>
-          <Col s={12} m={6}>
-            <h2 className={`main__title-block color-blue`}>À Propos De L’ESST</h2>
-          </Col>
-          <Col s={12} m={6} className={`about-us__image-container`}>
-            <img src={Logo} alt={`À Propos De L’ESST`} />
-          </Col>
-        </Row>
-        <Row className={`about-us__text-block ml0`}>
-          <Col s={12}>
-            <p className={`mb0`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div className={`wrapper__block bg-lightgrey`}>
+        <Container className={`about-us__container`}>
+          <Row className={`mb0`}>
+            <Col s={12} m={6}>
+              <h2 className={`main__title-block color-blue`}>À Propos De L’ESST</h2>
+              <p className={`about-us__text-content`}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley.
             </p>
-            <Link to={`/a-propos`} className={`about-us__link card-ui__link`}>
-              En Savoir <FontAwesomeIcon icon={faPlus} />
-            </Link>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+            <Col s={12} m={6} className={`about-us__image-container`}>
+              <p className={`about-us__text-content`}>
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            </Col>
+          </Row>
+          <Row className={`about-us__text-block ml0`}>
+            <Col s={12}>
+              <Link to={`/a-propos`} className={`about-us__link card-ui__link right`}>
+                En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`link__icon`} />
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
 
       <div className={`wrapper__block icons-container bg-orange relative`}>
         <BlockIcon itemClassName={`center`} forMediumSize={2} forSmallSize={2} containerClassName={`container`} data={statisticsIcons} />
