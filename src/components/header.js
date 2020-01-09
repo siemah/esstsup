@@ -542,6 +542,23 @@ const Header = (props) => {
               Contact
             </Link>
           </li>
+          <li className={`row-menu__item`}>
+            <Link cover
+              direction="up"
+              duration={1.5}
+              bg="
+                /*url(https://source.unsplash.com/random) */
+                center / cover   /* position / size */
+                no-repeat        /* repeat */
+                fixed            /* attachment */
+                padding-box      /* origin */
+                content-box      /* clip */
+                var(--purple)            /* color */
+              " 
+              to={`/preinscription/`} className={`row-menu__link`}>
+              Preinscription
+            </Link>
+          </li>
         </ul>
     </header>
   );
