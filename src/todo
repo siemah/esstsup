@@ -32,5 +32,5 @@
   - Fix z-index of the 2nd and 3th slide @done
 
 - Footer 
-  - remove margin added before footer 
-  - fix disable displaying wrapper-block when user click somewhere on body
+  - remove margin added before footer @done
+  - fix disable displaying wrapper-block when user click somewhere on body @done
