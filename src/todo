@@ -5,6 +5,11 @@
   - add some esthetics design @done
   - recaptcha on production mode later
 
+- 404
+  - add a custom image
+  - stylize the image to take the whole width 
+  - add a link lead to home page under the 404 image
+
 - Nos Formations
   - Add a background color to icon container @done
   - Stylize the width and height of formations icons @done

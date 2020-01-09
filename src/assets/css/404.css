@@ -1,0 +1,33 @@
+.page-404-container {
+  margin-top: 55px;
+  padding: 2rem 0;
+}
+.page-404-container img {
+  max-height: 16rem;
+}
+.page-404-container h4 {
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+.page-404-container .card__action {
+  margin-top: 1rem;
+}
+.page-404-container .card__link-ui {
+  padding: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.page-404-container .card__link-ui svg {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 601px) {
+  .page-404-container .card__link-ui {
+    padding: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+  .page-404-container .card__link-ui svg {
+    margin-left: 1rem;
+  }
+}
