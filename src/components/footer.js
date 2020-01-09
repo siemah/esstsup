@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMailBulk, faPhone, faMap, } from "@fortawesome/free-solid-svg-icons";
 
 import { Container, Row, Col, } from './layout/grid';
-import { Button, FormField, } from './layout/form';
 
 import Logo from '../assets/images/logo-white-esst.png';
+import Fb from '../assets/images/facebook.svg';
+import Insta from '../assets/images/instagram.svg';
 
 import '../assets/css/footer.css';
 
@@ -87,15 +88,15 @@ const Footer = (props) => {
               <ul className={`list m0`}>
                 <li className={`list-item flex-block center mb1`} >
                   <div className={`card__icon-container flex-block flex-center center rounded mb0 `}>
-                    <FontAwesomeIcon icon={faMailBulk} />
+                    <img width={20} src={Fb} alt={`reseaux social`} />
                   </div>
                   <a className={`list-link flex-block flex-center`} href={`https://www.facebook.com/esst-sup`}>ESSTSUP</a>
                 </li>
                 <li className={`list-item flex-block mb1 center`} >
                   <div className={`card__icon-container flex-block flex-center center rounded mb0 `}>
-                    <FontAwesomeIcon icon={faMailBulk} />
+                    <img width={20} src={Insta} alt={`reseaux social`} />
                   </div>
-                  <a className={`list-link flex-block flex-center`} href={`https://www.facebook.com/esst-sup`}>ESST_SUP</a>
+                  <a className={`list-link flex-block flex-center`} href={`https://www.instagram.com/esst_sup/`}>ESST_SUP</a>
                 </li>
               </ul>
             </Col>
