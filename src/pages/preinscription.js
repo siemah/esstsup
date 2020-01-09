@@ -17,8 +17,8 @@ const PreinscriptionPage = ({ data }) => {
       <div className={`fake-block`} />
       <div className={`preinscription-block`}>
         <Container className="flex-block flex-center">
-          <form className={`preinscription__form`} action="#" netlify-honeypot="bot-field" action='/success-de-preinscription/' name="preinscription" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="preinscription" />
+          <form className={`preinscription__form`} netlify-honeypot="bot-field" action='/success-form/' name="formulaire-de-preinscription" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="formulaire-de-preinscription" />
             <Row className="">
               <Col s='12'>
                 <h1 className='form-legend center'>Pré-inscrivez-vous en remplissant ce formulaire</h1>

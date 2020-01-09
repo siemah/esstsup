@@ -65,11 +65,11 @@ module.exports = {
         includedRoutes: [
           "**/posts",
           "**/pages",
-          "**/media",
-          "**/menus",
+          // "**/media",
+          // "**/menus",
           "/yoast/**",
           "/yoast/**",
-          "/*/*/comments", 
+          // "/*/*/comments", 
         ],
         // use a custom normalizer which is applied after the built-in ones.
         normalizer: function({ entities }) {

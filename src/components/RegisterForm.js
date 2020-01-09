@@ -6,8 +6,8 @@ import '../assets/css/register-form.css';
 
 export default function RegisterForm({ className=''}) {
   return (
-    <form className={`register-form__block ${className}`} netlify-honeypot="bot-field" action='/' name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="preinscription" />
+    <form className={`register-form__block ${className}`} netlify-honeypot="bot-field" action='/success-form/' name="formulaire-de-contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="formulaire-de-contact" />
       <Row className="mb0 js-slide-from-down" data-delay={0.1}>
         <Col s='12'>
           <FormField name='nom-complet' placeholder='Nom Complet' />
@@ -25,7 +25,7 @@ export default function RegisterForm({ className=''}) {
       </Row>
       <Row className="js-slide-from-down" data-delay={0.1}>
         <Col s='12'>
-          <textarea rows={4} className={`block`} placeholder={`Message`}></textarea>
+          <textarea name={`Message`} rows={4} className={`block`} placeholder={`Message`}></textarea>
         </Col>
       </Row>
       <Row className="mb0 js-slide-from-down" data-delay={0.1}>

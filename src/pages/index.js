@@ -146,7 +146,7 @@ const IndexPage = ({ data }) => {
           </Row>
           <Row className={`about-us__text-block ml0`}>
             <Col s={12}>
-              <Link to={`/a-propos`} className={`about-us__link card-ui__link right`}>
+              <Link to={`/a-propos-de-lesst/`} className={`about-us__link card-ui__link right`}>
                 En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`link__icon`} />
               </Link>
             </Col>
