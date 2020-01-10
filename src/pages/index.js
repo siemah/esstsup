@@ -3,26 +3,26 @@ import { graphql, Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import BlockIcon from "../components/home/BlockIcon";
 
 import '../assets/css/home.css';
 
 import RowBlock from "../components/home/RowBlock";
 import { Row, Container, Col } from "../components/layout/grid";
-import Card from "../components/home/Card";
 import { faChalkboardTeacher, faBookReader, faBrain, faAtom, faGlobe, faBuilding, faPhone, faEnvelope, faMobile, faMap, faMapMarker, faMapMarkerAlt, faPlus, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import HomeHero from "../components/home/HomeHero";
-
+import Card from "../components/home/Card";
 import TelecomIcon from '../assets/images/icons/telecom.svg';
 import InfoIcon from '../assets/images/icons/info.svg';
 import ElectroIcon from '../assets/images/icons/electro.svg';
 import ChimieIcon from '../assets/images/icons/chimie.svg';
-import Logo from '../assets/images/esst-logo.png';
 import RegisterForm from "../components/RegisterForm";
-import Gallery from "../components/home/Gallery";
-import Carousel from "../components/Carousel";
-import Testiminilas from "../components/home/Testiminilas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CondorLogo from '../assets/images/partenaires/logo_condor.png';
+import HuppLogo from '../assets/images/partenaires/logo_hupp.png';
+import IcosnetLogo from '../assets/images/partenaires/logo_icosnet.png';
+import MobilisLogo from '../assets/images/partenaires/logo_mobilis.png';
+import SntfLogo from '../assets/images/partenaires/logo_sntf.png';
+import NovaLogo from '../assets/images/partenaires/logo_nova.png';
 // import Link from "gatsby-plugin-transition-link/Link";
 
 const IndexPage = ({ data }) => {
@@ -237,44 +237,34 @@ const IndexPage = ({ data }) => {
             <div className={`partenaire__block`}>
               <Col s={6} m={3} className={`flex-block`}>
                 <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
+                  <img src={CondorLogo} alt={`condor`} className={`mb0`} />
                 </div>
               </Col>
               <Col s={6} m={3} className={`flex-block`}>
                 <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
+                  <img src={NovaLogo} className={`mb0`} />
                 </div>
               </Col>
               <Col s={6} m={3} className={`flex-block`}>
                 <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
+                  <img src={MobilisLogo} className={`mb0`} />
                 </div>
               </Col>
               <Col s={6} m={3} className={`flex-block`}>
                 <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
+                  <img src={IcosnetLogo} className={`mb0`} />
                 </div>
               </Col>
             </div>
             <div className={`partenaire__block`}>
               <Col s={6} m={3} className={`flex-block`}>
                 <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
+                  <img src={HuppLogo} className={`mb0`} />
                 </div>
               </Col>
               <Col s={6} m={3} className={`flex-block`}>
                 <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
-                </div>
-              </Col>
-              <Col s={6} m={3} className={`flex-block`}>
-                <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
-                </div>
-              </Col>
-              <Col s={6} m={3} className={`flex-block`}>
-                <div className={`flex-item`}>
-                  <img src={Logo} className={`mb0`} />
+                  <img src={SntfLogo} className={`mb0`} />
                 </div>
               </Col>
             </div>
