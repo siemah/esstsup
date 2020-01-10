@@ -10,7 +10,7 @@ class Map extends React.Component {
   state = {
     viewport: {
       width: "100%",
-      height: 250,
+      height: '100%',
       latitude: 36.7557197,
       longitude: 3.0139383,
       zoom: 13
@@ -24,6 +24,7 @@ class Map extends React.Component {
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})}
         mapboxApiAccessToken={mapboxApiAccessToken}
+        
       >
         <Marker latitude={36.7557197} longitude={3.0139383} offsetLeft={-20} offsetTop={-10} className='center'>
           <img src={LocationImg} height='35' alt="Association National des Financiers est ici"/>

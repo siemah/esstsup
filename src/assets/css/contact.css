@@ -1,0 +1,46 @@
+.contact-page {
+  margin-top: .5rem;
+}
+.map-block,
+.form-block {
+  flex: 1;
+}
+.contact-page .map-block .map-container {
+  height: 100% !important;
+}
+.contact-page .register-form__block {
+  box-shadow: none;
+  max-width: 500px;
+}
+.contact-page .form-field-block__input,
+.contact-page textarea {
+  border-color: #414141;
+  color: #414141;
+}
+.contact-page .form-filed__button  {
+  background-color: var(--blue);
+  padding: 1rem 3rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-page {
+    margin-top: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .map-form__block {
+    display: block !important;
+  }
+  .contact-page .map-block {
+    min-height: 200px !important;
+    height: 200px !important;
+  }
+  .contact-page .form-block {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .contact-page .register-form__block {
+    max-width: 100%;
+  }
+}

@@ -896,7 +896,9 @@ a, button {
 .pb2 {
   padding-bottom: 1.5rem !important;
 }
-
+.fake-block {
+  height: 50px;
+}
 .p2 {
   padding: 1.5rem !important;
 }
