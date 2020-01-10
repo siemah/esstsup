@@ -60,13 +60,13 @@ const PreinscriptionPage = ({ data }) => {
               </Col>
             </Row>
             <Row>
-              <Col s='12' m='3'>
+              <Col s='12' m='4'>
                 <FormField name='moyenne-du-sciences' label="Moyenne du Sciences" />
               </Col>
-              <Col s='12' m='3'>
+              <Col s='12' m='4'>
                 <FormField name='moyenne-du-math' label='Moyenne du Mathématiques' />
               </Col>
-              <Col s='12' m='3'>
+              <Col s='12' m='4'>
                 <FormField name='moyenne-du-physique' label="Moyenne du Physique" />
               </Col>
             </Row>
