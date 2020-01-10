@@ -65,9 +65,8 @@ module.exports = {
         includedRoutes: [
           "**/posts",
           "**/pages",
-          // "**/media",
+          "**/media",
           // "**/menus",
-          "/yoast/**",
           "/yoast/**",
           // "/*/*/comments", 
         ],
