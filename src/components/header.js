@@ -325,7 +325,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/`} className={`row-menu__link`}>
+              to={`/a-propos-de-lesst/`} className={`row-menu__link`}>
               A Propos
             </Link>
           </li>

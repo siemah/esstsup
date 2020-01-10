@@ -18,7 +18,7 @@ const WordpressPage = ({ data, ...rest }) => {
     path,
   });
   const metas = getBackendSEOMetas(yoast_meta);
-
+console.log('data', data)
   return (
     <Layout>
       <SEO title={yoast_title} meta={socialMetas} lang={data.site.siteMetadata.lang} {...metas} />
