@@ -90,7 +90,7 @@ export default function HomeHero({ data, className = '', }) {
                   hex={`#004197`}
                   to={`/licence-en-telecommunication/`}
                   className={`card-ui__link radius-1 left`}>
-                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                  En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function HomeHero({ data, className = '', }) {
                   hex={`#004197`}
                   to={`/licence-en-informatique/`}
                   className={`card-ui__link radius-1 left js-animate-sliding js-delay-2`} data-slide='up'>
-                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                  En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function HomeHero({ data, className = '', }) {
                   hex={`#004197`}
                   to={`/licence-en-electronique/`}
                   className={`card-ui__link radius-1 left`}>
-                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                  En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function HomeHero({ data, className = '', }) {
                   hex={`#004197`}
                   to={`/licence-en-chimie/`}
                   className={`card-ui__link radius-1 left`}>
-                  En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
+                  En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} className={`hero__link-icon`} />
                 </AniLink>
               </div>
             </div>

@@ -147,7 +147,7 @@ const IndexPage = ({ data }) => {
           <Row className={`about-us__text-block ml0`}>
             <Col s={12}>
               <Link to={`/a-propos-de-lesst/`} className={`about-us__link card-ui__link right`}>
-                En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} className={`link__icon`} />
+                En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} className={`link__icon`} />
               </Link>
             </Col>
           </Row>
@@ -168,7 +168,7 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className={`card__action`}>
                   <Link to={`/licence-en-telecommunication/`}>
-                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                    En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
               </div>
@@ -184,7 +184,7 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className={`card__action`}>
                   <Link to={`/licence-en-informatique/`}>
-                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                    En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
               </div>
@@ -200,7 +200,7 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className={`card__action`}>
                   <Link to={`/licence-en-electronique/`}>
-                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                    En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
               </div>
@@ -216,7 +216,7 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className={`card__action`}>
                   <Link to={`/licence-en-chimie/`}>
-                    En Savoir <FontAwesomeIcon icon={faLongArrowAltRight} />
+                    En Savoir Plus <FontAwesomeIcon icon={faLongArrowAltRight} />
                   </Link>
                 </div>
               </div>
