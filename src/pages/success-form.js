@@ -15,7 +15,8 @@ const SuccessFormPage = () => {
     <Layout>
       <SEO title={`Message de success`} />
       <div style={{
-        padding: '5rem 0'
+        padding: '5rem 0',
+        marginTop: '50px'
       }}>
         <Container className={`center`}>
           <Row>
