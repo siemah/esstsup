@@ -252,7 +252,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/`} className={`row-menu__link`}>
+                to={`/partenaires/`} className={`row-menu__link`}>
                 Partenaires
               </Link>
             </li>
@@ -501,7 +501,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/`} className={`row-menu__link`}>
+              to={`/partenaires/`} className={`row-menu__link`}>
               Partenaires
             </Link>
           </li>
