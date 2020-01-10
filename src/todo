@@ -3,6 +3,9 @@
   - copy/paste all fields from esst-sup.com @done
   - position form at center of page @done
   - add some esthetics design @done
+  - add title to page
+  - move form 2 right @done
+  - add image on left(image from esst-sup.com) @done
   - recaptcha on production mode later
 
 - 404
@@ -18,9 +21,6 @@
 
 - Partenaires 
   - change the background color from grey to lightgrey(#f1f1f1) @done
-  - add title to page 
-  - move form 2 right 
-  - add image on left(image from esst-sup.com)
 
 - Header
   - fix submenu on mobile version
@@ -53,7 +53,7 @@
   - remove border radius on submit button @done
   - add Title above form @done
   - Add some space between main content and footer @done
-  - add other contacts list at bottom
+  - add other contacts list at bottom @done
 
 - Footer 
   - remove margin added before footer @done

@@ -16,12 +16,13 @@ const PreinscriptionPage = ({ data }) => {
       <SEO title="Preinscription" />
       <div className={`fake-block`} />
       <div className={`preinscription-block`}>
-        <Container className="flex-block flex-center">
-          <form className={`preinscription__form`} netlify-honeypot="bot-field" action='/success-form/' name="formulaire-de-preinscription" method="POST" data-netlify="true">
+        <Container className="flex-block">
+          <div className={`image-block`} />
+          <form className={`preinscription__form mb0`} netlify-honeypot="bot-field" action='/success-form/' name="formulaire-de-preinscription" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="formulaire-de-preinscription" />
             <Row className="">
               <Col s='12'>
-                <h1 className='form-legend center'>Pré-inscrivez-vous en remplissant ce formulaire</h1>
+                <h1 className='form-legend'>Pré-inscrivez-vous en remplissant ce formulaire</h1>
               </Col>
             </Row>
             <Row className="">

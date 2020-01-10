@@ -3,10 +3,17 @@
 }
 .preinscription-block {
   background-color: #f2f2f2;
-  padding: 2rem 0;
+  padding: 3rem 0 2rem 0;
+}
+.image-block {
+  background-image: url(https://esst-sup.com/images/bg-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  background-size: cover;
 }
 .form-legend {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin: 2.25rem 0;
   font-family: var(--fontFamilyTrade), sans-serif;
   letter-spacing: 1px;
@@ -17,8 +24,9 @@
 }
 .preinscription__form {
   background-color: var(--white);
-  box-shadow: -5px 5px 11px 1px rgba(0,0,0, .3);
-  max-width: 50%;
+  /* box-shadow: -5px 5px 11px 1px rgba(0,0,0, .3); */
+  /* max-width: 50%; */
+  flex: 1;
 }
 .preinscription-block textarea {
   outline: none;
@@ -44,6 +52,11 @@
 }
 .preinscription__form .form__button_submit {
   padding: 1rem 3rem;
+}
+@media only screen and (max-width: 601px) {
+  .image-block {
+    display: none;
+  }
 }
 @media only screen and (max-width: 771px) {
   .preinscription__form {
