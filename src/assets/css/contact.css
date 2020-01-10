@@ -17,6 +17,15 @@
   border-color: #414141;
   color: #414141;
 }
+.contact-page ::-webkit-input-placeholder { /* Edge */
+  color: #414141;
+}
+.contact-page :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #414141;
+}
+.contact-page ::placeholder {
+  color: #414141;
+}
 .contact-page .form-filed__button  {
   background-color: var(--blue);
   padding: 1rem 3rem;
