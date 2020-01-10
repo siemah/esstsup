@@ -101,18 +101,7 @@ const Header = (props) => {
               </Link>
             </li>
             <li className={`row-menu__item`}>
-              <a cover
-                direction="up"
-                duration={1.5}
-                bg="
-                  /*url(https://source.unsplash.com/random) */
-                  center / cover   /* position / size */
-                  no-repeat        /* repeat */
-                  fixed            /* attachment */
-                  padding-box      /* origin */
-                  content-box      /* clip */
-                  var(--purple)            /* color */
-                " 
+              <a
                 href={`#`}
                 className={`row-menu__link`}>
                 LMD
@@ -173,22 +162,12 @@ const Header = (props) => {
               </ul>
             </li>
             <li className={`row-menu__item`}>
-              <Link cover
-                direction="up"
-                duration={1.5}
-                bg="
-                  /*url(https://source.unsplash.com/random) */
-                  center / cover   /* position / size */
-                  no-repeat        /* repeat */
-                  fixed            /* attachment */
-                  padding-box      /* origin */
-                  content-box      /* clip */
-                  var(--purple)            /* color */
-                " 
-                to={`/`} className={`row-menu__link`}>
+              <a cover
+                href={`#`}
+                className={`row-menu__link`}>
                 Formation continue
                 <FontAwesomeIcon icon={faAngleDown} />
-              </Link>
+              </a>
               <ul className={'column-menu m0'}>
                 <li className={`row-menu__item block m0`}>
                   <Link cover
@@ -203,8 +182,8 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/`} className={`row-menu__link`}>
-                    Informa
+                    to={`/informatique/`} className={`row-menu__link`}>
+                    Informaque
                   </Link>
                 </li>
                 <li className={`row-menu__item block m0`}>
@@ -237,7 +216,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/`} className={`row-menu__link`}>
+                    to={`/telecommunications/`} className={`row-menu__link`}>
                     Telecom
                   </Link>
                 </li>
@@ -254,7 +233,7 @@ const Header = (props) => {
                       content-box      /* clip */
                       var(--purple)            /* color */
                     " 
-                    to={`/`} className={`row-menu__link`}>
+                    to={`/chimie-pharmaceutique/`} className={`row-menu__link`}>
                     Pharma
                   </Link>
                 </li>
@@ -452,8 +431,8 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/`} className={`row-menu__link`}>
-                  Informa
+                  to={`/informatique/`} className={`row-menu__link`}>
+                  Informatique
                 </Link>
               </li>
               <li className={`row-menu__item block m0`}>
@@ -486,7 +465,7 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/`} className={`row-menu__link`}>
+                  to={`/telecommunications/`} className={`row-menu__link`}>
                   Telecom
                 </Link>
               </li>
@@ -503,8 +482,8 @@ const Header = (props) => {
                     content-box      /* clip */
                     var(--purple)            /* color */
                   " 
-                  to={`/`} className={`row-menu__link`}>
-                  Pharma
+                  to={`/chimie-pharmaceutique/`} className={`row-menu__link`}>
+                  Pharmaceutique
                 </Link>
               </li>
             </ul>

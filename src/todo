@@ -24,6 +24,7 @@
 - Partenaires 
   - Replace placeholder images with the right ones @done
   - change the background color from grey to lightgrey(#f1f1f1) @done
+  - Design a dedecated page for partenaires
 
 - Header
   - fix submenu on mobile version
@@ -52,7 +53,7 @@
   - Add bottom arrow or mouse to indicate to user to scroll down(not for now) @done
   - Fix z-index of the 2nd and 3th slide @done
   - en savoir plus at home page @done
-  - fix the informatic icon
+  - fix the informatique icon @done
   - dots-label section at contact section
 
 - Contact
@@ -66,3 +67,12 @@
   - fix disable displaying wrapper-block when user click somewhere on body @done
   - add the right link at footer @done
   - add social media icons @done
+
+- Page
+  - Stylize all content in dynamic page @done
+  - create formation continue pages on wordpress @done
+    - Informatique @done
+    - Télécommunications @done
+    - Chimie Pharmaceutique @done
+  - add links of those pages to header menu @done
+  - Put available content on each page @done

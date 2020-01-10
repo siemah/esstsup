@@ -2,6 +2,7 @@
   font-size: 1.25rem;
   font-weight: normal;
   font-family: var(--fontFamilyTrade), sans-serif;
+  overflow: hidden;
 }
 .page__title {
   color: var(--white);
@@ -12,7 +13,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 1.2rem;
-  border-left: 5px solid var(--purple);
+  border-left: 5px solid var(--blue);
 }
 blockquote, q {
   -webkit-hyphens: none;
@@ -66,4 +67,21 @@ p {
 .page-container .has-text-align-left,
 .page-container .alignleft {
   text-align: left;
+}
+.page figure {
+  text-align: center;
+}
+.page figure img,
+.page img {
+  max-width: 100%;
+}
+.page a {
+  color: var(--blue);
+  font-weight: 600;
+}
+.page a:hover,
+.page a:focus,
+.page a:active,
+.page a:visited {
+  color: var(--purple);
 }
