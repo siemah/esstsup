@@ -96,8 +96,8 @@ const IndexPage = ({ data }) => {
             <FontAwesomeIcon icon={faMobile} className={`form-list__icon color-blue`} />
           </div>
           <div className={`flex-block flex-column  flex-center`}>
-            <a className={`form-list__link color-darkenblue`} href={`tel://+213 (0) 7 99 93 16 99`}>+213 (0) 7 99 93 16 99</a>
-            <a className={`form-list__link color-darkenblue`} href={`tel://+213 (0) 7 99 93 16 99`}>+213 (0) 7 99 93 16 99</a>
+            <a className={`form-list__link color-darkenblue`} href={`tel://+213799931699`}>+213 (0) 7 99 93 16 99</a>
+            <a className={`form-list__link color-darkenblue`} href={`tel://+21323300801`}>+213 (0) 23 30 08 01{`  `}</a>
           </div>
         </li>
         <li className={`js-animate slide-up mb0 flex-block`}>

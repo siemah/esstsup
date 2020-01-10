@@ -77,7 +77,7 @@ const Footer = (props) => {
             <Col s={12} m={4} className={`footer__box-item p2 bg-darkblue`}>
               <h2 className={`footer__title uppercase mb1`}>Nos Formations</h2>
               <ul className={`list m0`}>
-                <li className={`list-item mb1`} ><Link className={`list-link`} to={`/licence-en-telecommunication/`}>Licence Télécommunication</Link></li>
+                <li className={`list-item mb1`} ><Link className={`list-link`} to={`/licence-en-telecommunication/`}>Licence en Télécommunication</Link></li>
                 <li className={`list-item mb1`} ><Link className={`list-link`} to={`/licence-en-informatique/`}>Licence en Informatique </Link></li>
                 <li className={`list-item mb1`} ><Link className={`list-link`} to={`/licence-en-electronique/`}>Licence en Électronique</Link></li>
                 <li className={`list-item mb1`} ><Link className={`list-link`} to={`/licence-en-chimie/`}>Licence en Chimie</Link></li>
