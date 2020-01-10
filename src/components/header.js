@@ -290,7 +290,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/`} className={`row-menu__link`}>
+                to={`/contact/`} className={`row-menu__link`}>
                 Contact
               </Link>
             </li>
@@ -307,7 +307,7 @@ const Header = (props) => {
                   content-box      /* clip */
                   var(--purple)            /* color */
                 " 
-                to={`/`} className={`row-menu__link`}>
+                to={`/preinscription/`} className={`row-menu__link`}>
                 Preinscription
               </Link>
             </li>
@@ -539,7 +539,7 @@ const Header = (props) => {
                 content-box      /* clip */
                 var(--purple)            /* color */
               " 
-              to={`/`} className={`row-menu__link`}>
+              to={`/contact/`} className={`row-menu__link`}>
               Contact
             </Link>
           </li>
