@@ -18,9 +18,13 @@
 
 - Partenaires 
   - change the background color from grey to lightgrey(#f1f1f1) @done
+  - add title to page 
+  - move form 2 right 
+  - add image on left(image from esst-sup.com)
 
 - Header
   - fix submenu on mobile version
+  - preinscription text is not on center
   - Make main menu to be above of carousel @done
   - add zindex to logo @done
   - remove center class from .center main--menu__block @done
@@ -46,7 +50,10 @@
   - Fix z-index of the 2nd and 3th slide @done
 
 - Contact
-  - remove border radius on submit button
+  - remove border radius on submit button @done
+  - add Title above form @done
+  - Add some space between main content and footer @done
+  - add other contacts list at bottom
 
 - Footer 
   - remove margin added before footer @done

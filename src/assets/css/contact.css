@@ -1,5 +1,6 @@
 .contact-page {
   margin-top: .5rem;
+  padding-bottom: 2rem;
 }
 .map-block,
 .form-block {
@@ -30,6 +31,19 @@
   background-color: var(--blue);
   padding: 1rem 3rem;
 }
+
+.contact-page a {
+  color: var(--blue);
+}
+.contact-page ul {
+  list-style: none;
+  margin: 0;
+}
+.contact-page ul li {
+  padding: 0.5rem 0;
+  margin-bottom: 0.25rem !important;
+}
+
 
 @media only screen and (max-width: 991px) {
   .contact-page {

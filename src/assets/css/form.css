@@ -1,6 +1,11 @@
 .form-filed-block{
   margin-top: .5rem;
 }
+.form__legend-title {
+  font-size: 3rem;
+  color: #414141;
+  font-family: var(--fontFamilyTrade), sans-serif;
+}
 .form-field-block__label,
 .form-field-block__input {
   display: block;
