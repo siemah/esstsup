@@ -13,6 +13,8 @@
   - stylize the image to take the whole width @done
   - add a link lead to home page under the 404 image @done
 
+- About ESST @done
+  - add content @done
 - Nos Formations
   - Add a background color to icon container @done
   - Stylize the width and height of formations icons @done
@@ -20,6 +22,7 @@
   - Make card action link style similar 2link at carousel section @done
 
 - Partenaires 
+  - Replace placeholder images with the right ones
   - change the background color from grey to lightgrey(#f1f1f1) @done
 
 - Header

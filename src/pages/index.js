@@ -131,16 +131,13 @@ const IndexPage = ({ data }) => {
             <Col s={12} m={6} className={`dots-label__container`}>
               <h2 className={`main__title-block color-blue bg-lightgrey`}>À Propos De L’ESST</h2>
               <p className={`about-us__text-content`}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              L’Ecole supérieure des sciences et technologies ESST est la première université privée en sciences et technologie en Algérie agrée par l’état.
             </p>
             </Col>
             <Col s={12} m={6} className={`about-us__image-container`}>
               <p className={`about-us__text-content`}>
-                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+              Elle a pour ambition de constituer un pôle de référence et d’excellence dans la formation supérieure, la recherche scientifique et le développement 
+              technologique dans le domaine des sciences et technologies notamment en informatique, électronique et dans le domaine de la chimie.
             </p>
             </Col>
           </Row>
