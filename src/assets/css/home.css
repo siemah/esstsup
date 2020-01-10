@@ -202,23 +202,6 @@
   font-size: 3.5rem; /* was 7rem */
   font-family: var(--fontFamilyTrade), sans-serif;
 }
-.dots-label__container {
-  position: relative;
-  z-index: 1;
-}
-.dots-label__container::after {
-  content: '';
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../../assets/images/label-dots.svg);
-  height: 63px;
-  width: 63px;
-  left: -37px;
-  top: -38px;
-  z-index: -1;
-}
 
 .about-us__text-block {
   border-left: none;

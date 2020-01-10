@@ -20,8 +20,8 @@ const PreinscriptionPage = ({ data }) => {
           <div className={`image-block`} />
           <form className={`preinscription__form mb0`} netlify-honeypot="bot-field" action='/success-form/' name="formulaire-de-preinscription" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="formulaire-de-preinscription" />
-            <Row className="">
-              <Col s='12'>
+            <Row className="" style={{overflow: 'hidden'}}>
+              <Col s='12' className={`dots-label__container`}>
                 <h1 className='form-legend'>Pré-inscrivez-vous en remplissant ce formulaire</h1>
               </Col>
             </Row>

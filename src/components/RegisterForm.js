@@ -4,15 +4,15 @@ import { FormField, Button } from './layout/form';
 
 import '../assets/css/register-form.css';
 
-export default function RegisterForm({ className='', title=null}) {
+export default function RegisterForm({ className='', parentTitleClassName='', titleClassName='', title=null}) {
   return (
     <form className={`register-form__block ${className}`} netlify-honeypot="bot-field" action='/success-form/' name="formulaire-de-contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="formulaire-de-contact" />
       {
         title &&
         <Row>
-          <Col s={12}>
-            <h2 className={`form__legend-title mb0`}>{title}</h2>
+          <Col s={12} className={`${parentTitleClassName}`}>
+            <h2 className={`form__legend-title mb0 ${titleClassName}`}>{title}</h2>
           </Col>
         </Row>
       }

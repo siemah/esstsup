@@ -157,7 +157,7 @@ const IndexPage = ({ data }) => {
       <div className={`wrapper__block cards-container relative`}>
         <Container>
           <Row className={`mb0`}>
-            <Col s={12} m={6} l={3} className={`mb2`}>
+            <Col s={12} m={6} l={3} className={`mb2 dots-label__container`}>
               <div className={`card-container`}>
                 <div className={`card-icon__container center`}>
                   <img src={TelecomIcon} alt={'telecom'} />
@@ -173,7 +173,7 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
             </Col>
-            <Col s={12} m={6} l={3} className={`mb2`}>
+            <Col s={12} m={6} l={3} className={`mb2 dots-label__container-bottom`}>
               <div className={`card-container`}>
                 <div className={`card-icon__container center`}>
                   <img src={InfoIcon} alt={'telecom'} />
@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
             </Col>
-            <Col s={12} m={6} l={3} className={`mb2`}>
+            <Col s={12} m={6} l={3} className={`mb2 dots-label__container`}>
               <div className={`card-container`}>
                 <div className={`card-icon__container center`}>
                   <img src={ElectroIcon} alt={'telecom'} />
@@ -205,7 +205,7 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
             </Col>
-            <Col s={12} m={6} l={3}>
+            <Col s={12} m={6} l={3} className={`dots-label__container-bottom`}>
               <div className={`card-container`}>
                 <div className={`card-icon__container center`}>
                   <img src={ChimieIcon} alt={'telecom'} />
@@ -305,11 +305,10 @@ const IndexPage = ({ data }) => {
 
       <RowBlock
         containerClassName={`wrapper__block `}
-        children={<RegisterForm className={'bg-blue mb0'} />}
+        children={<RegisterForm className={'bg-blue mb0 dots-label__container-bottom'} />}
         isRight
         title={'Inscription et renseignements'}
-        secondHalfClassName={`dots-label__container`}
-        titleClassName={`main__title-block color-blue bg-white`}
+        titleClassName={`main__title-block color-blue bg-white dots-label__container`}
         contentComponent={ContactContent}
       />
     </Layout>

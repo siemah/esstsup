@@ -5,6 +5,7 @@
 .map-block,
 .form-block {
   flex: 1;
+  overflow: hidden;
 }
 .contact-page .map-block .map-container {
   height: 100% !important;

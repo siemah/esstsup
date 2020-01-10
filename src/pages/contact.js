@@ -28,7 +28,7 @@ const ContactPage = ({ data }) => {
               label="Siège de l'esst" />
           </div>
           <div className={`form-block`}>
-            <RegisterForm title={'Contact'} />
+            <RegisterForm title={'Contact'} titleClassName={`color-blue bg-white`} parentTitleClassName={`dots-label__container`} />
           </div>
         </div>
 

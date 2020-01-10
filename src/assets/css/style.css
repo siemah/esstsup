@@ -971,7 +971,30 @@ a, button {
   background-color: var(--green);
   color: #ffffff;
 }
-
+.dots-label__container,
+.dots-label__container-bottom {
+  position: relative;
+  z-index: 1;
+}
+.dots-label__container::after,
+.dots-label__container-bottom::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../assets/images/label-dots.svg);
+  height: 63px;
+  width: 63px;
+  left: -37px;
+  top: -38px;
+  z-index: -1;
+}
+.dots-label__container-bottom::after {
+  left: -37px;
+  top: auto;
+  bottom: -38px;
+}
 /**** ANIMATION *********/
 .loading-background {
   animation: loading-background 1s infinite;
