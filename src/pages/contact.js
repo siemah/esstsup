@@ -20,6 +20,7 @@ const ContactPage = ({ data }) => {
       <SEO title={`Contact`} />
       <div className={`fake-block`} />
       <div className='contact-page'>
+        
         <div className={`map-form__block flex-block`}>
           <div className='map-block'>
             <Map
@@ -30,6 +31,15 @@ const ContactPage = ({ data }) => {
             <RegisterForm />
           </div>
         </div>
+
+        <Container>
+          <Row>
+            <Col>
+              
+            </Col>
+          </Row>
+        </Container>
+
       </div>
     </Layout>
   );
